@@ -1,0 +1,89 @@
+<view class="flex-col page">
+  <view class="flex-col section">
+    <view class="flex-row justify-between items-center group">
+    </view>
+    <view class="mt-22 flex-row justify-center relative group_2">
+      <view class="flex-row items-center self-start pos_2">
+        <view class="flex-row items-center shrink-0">
+          <view class="flex-col justify-start items-center shrink-0 text-wrapper">
+            <text class="font text">时</text>
+          </view>
+          <text class="font_2 text_2 ml-21">天</text>
+        </view>
+        <text class="ml-32 font_2 text_3">周</text>
+      </view>
+      <text class="self-center font_2 text_4">月</text>
+      
+    </view>
+  </view>
+  <view class="flex-col relative group_3">
+    <view class="flex-col group_4">
+      <view class="flex-col self-stretch section_4">
+        <view class="flex-col">
+          <view class="flex-row justify-between items-center" style="width: 634rpx; height: 70rpx; display: flex; box-sizing: border-box">
+            <text class="font text_5">实时温度记录</text>
+          </view>
+          <view class="mt-6 flex-row justify-between items-center">
+            <view class="flex-row">
+              <view class="flex-row items-center">
+                <view class="shrink-0 section_5"></view>
+                <text class="ml-4 font_3">最高温度</text>
+              </view>
+              <view class="flex-row items-center ml-21">
+                <view class="shrink-0 section_6"></view>
+                <text class="ml-4 font_3 text_6">最低温度</text>
+              </view>
+              <view class="flex-row items-center ml-21">
+                <view class="shrink-0 section_7"></view>
+                <text class="ml-4 font_3">平均温度</text>
+              </view>
+            </view>
+            
+          </view>
+        </view>
+        <view class="flex-col group_6">
+          <text class="self-start font_4">25℃</text>
+          <view class="flex-row self-stretch mt-9">
+            <text class="self-start font_4 text_9">15℃</text>
+          </view>
+        </view>
+        <view class="flex-col group_7">
+          <text class="self-start font_4">5℃</text>
+          <view class="flex-row justify-between self-stretch group_8 mt-11">
+            <text class="font_6">16:00</text>
+            <text class="font_6">16:15</text>
+            <text class="font_6">16:30</text>
+            <text class="font_6">16:45</text>
+            <text class="font_6">16:59</text>
+          </view>
+        </view>
+      </view>
+      <text class="self-start font text_10 mt-33">历史温度记录</text>
+    </view>
+    <view class="section_8"></view>
+    <view class="flex-col pos_3">
+      <view class="flex-col mt-8 list-item" wx:for="{{items}}" wx:for-item="item" wx:for-index="index" wx:key="index" bindtap="History">
+        <view class="flex-row justify-between items-center">
+          <text class="font text_11">5月12日</text>
+          <view class="flex-row">
+            <text class="font_5 text_12">19:30-21:15</text>
+            <image
+              class="shrink-0 image_8 ml-7"
+              src="../../imgs/Polygon 5.png"
+            />
+          </view>
+        </view>
+        <view class="flex-row mt-23">
+          <view class="flex-row items-center">
+            <text class="font_7">平均温度：</text>
+            <text class="ml-4 font_8">22℃</text>
+          </view>
+          <view class="ml-36 flex-row items-center">
+            <text class="font_7">最高温度：</text>
+            <text class="ml-4 font_8">32℃</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

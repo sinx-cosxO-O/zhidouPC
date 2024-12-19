@@ -1,0 +1,104 @@
+<view class="flex-col page">
+  <view class="flex-col flex-1 group">
+    <view class="flex-col section">
+      <view class="flex-row justify-between items-center">
+        <image
+          class="image"
+          src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=07e6ae9f9f3bb1e2797f2797553f0ff0.png"
+        />
+        <view class="flex-row">
+          <image
+            class="image_2"
+            src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=ef2a82bec8baa80dd80e219177211114.png"
+          />
+          <image
+            class="image_3 ml-5"
+            src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=988d37e58840391cb92681ee16e57371.png"
+          />
+          <image
+            class="image_4 ml-5"
+            src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=7d36e74c225d9d783bf4cbd32ebf2978.png"
+          />
+        </view>
+      </view>
+      <view class="flex-row justify-between items-start group_2 mt-22">
+        <view class="flex-row items-center group_3">
+          <image
+            class="image_7"
+            src="../../imgs/userphoto.png"
+          />
+          <view class="flex-col items-start ml-14">
+            <text class="text">手机用户3333</text>
+            <text class="font text_3 mt-11">133****3333</text>
+          </view>
+        </view>
+        <view class="flex-col">
+          
+          <view class="flex-row items-center button section_4 mt-30" bindtap="personinfoJump">
+            <text class="text_2">个人信息</text>
+            <image
+              class="shrink-0 image_8 image_9 ml-4"
+              src="../../imgs/Polygon 2.png"
+            />
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="flex-col relative group_4">
+      <view class="flex-col group_1">
+        <view class="flex-row justify-between items-center section_1" bindtap="myProduct">
+          <view class="flex-row items-center">
+            <image
+              class="shrink-0 image_10"
+              src="../../imgs/myproduct.png"
+            />
+            <text class="font text_4 ml-11">我的产品</text>
+          </view>
+          <image
+            class="image_8 image_18"
+            src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=db4bf70882ac5348b30c0375f5ae91ab.png"
+          />
+        </view>
+        <view class="flex-row justify-between section_6 mt-8" bindtap="helpJump">
+          <view class="flex-row self-center">
+            <view class="flex-col justify-start items-end shrink-0 text-wrapper"><text class="text_6">？</text></view>
+            <text class="self-start font text_5 ml-8">帮助</text>
+          </view>
+          <image
+            class="self-start image_8 image_11"
+            src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=db4bf70882ac5348b30c0375f5ae91ab.png"
+          />
+        </view>
+        <view class="flex-row justify-between items-center section_5 mt-8" bindtap="contextJump">
+          <view class="flex-row items-center">
+            <image
+              class="shrink-0 image_12"
+              src="../../imgs/contextus.png"
+            />
+            <text class="font text_7 ml-9">联系我们</text>
+          </view>
+          <image
+            class="image_8 image_1"
+            src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=db4bf70882ac5348b30c0375f5ae91ab.png"
+          />
+        </view>
+        <view class="flex-row justify-between items-center section_8 mt-8" bindtap="questionJump">
+          <view class="flex-row items-center">
+            <image
+              class="shrink-0 image_13"
+              src="../../imgs/wenjuan.png"
+            />
+            <text class="font ml-10">调查问卷</text>
+          </view>
+          <image
+            class="image_8 image_16"
+            src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=db4bf70882ac5348b30c0375f5ae91ab.png"
+          />
+        </view>
+      </view>
+      <view class="flex-col justify-start items-center button_2 text-wrapper_2 mt-56" bindtap="Quit">
+        <text class="font text_8">退出登录</text>
+      </view>
+    </view>
+  </view>
+</view>

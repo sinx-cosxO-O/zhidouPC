@@ -1,0 +1,113 @@
+<view class="flex-col page">
+  <view class="flex-col flex-1 group">
+    <view class="flex-row justify-between items-center group_2">
+    </view>
+    <view class="flex-col group_4 mt-22">
+      <view class="flex-col justify-start items-end relative group_5">
+        <image style="width: 746rpx; height: 736rpx; display: block; box-sizing: border-box"
+          class="image_9"
+          src="../../imgs/clothes2.png"
+        />
+
+        <view class="flex-row justify-between section_5 pos_9" style="position: absolute; left: 0rpx; top: 544rpx">
+        <!-- 切换运动状态 -->
+          <text class="font_5">当前状态</text>
+          <view class="flex-row items-center">
+            <van-dropdown-menu plain="true" class="font_5" active-color="#1989fa">
+             <van-dropdown-item  class="font_5" value="{{ value1 }}" options="{{ option1 }}" />
+            </van-dropdown-menu>
+          </view>
+        </view>
+        <text class="font_3 pos_8">开关</text>
+        <van-switch
+          class="pos_7 switchV"
+          name="clothesSwitch"
+          size="28.00"
+          bind:change="onSwitchChange"
+          checked="{{ switchV }}"
+         style="position: absolute; left: 10rpx; top: 164rpx"></van-switch>
+        <image
+          class="image_6 pos_3"
+          src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=7d4d200360b1371a53b7ef3dc363c772.png"
+        />
+        <image
+          class="image_5 pos_2"
+          src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=e955c333ba63a8ba23e0e54ee08c95f2.png"
+        />
+        <text class="font pos_4">100%</text>
+        <text class="font_2 text_2 pos_6">可用时间：8小时32分</text>
+        <view class="flex-col justify-start items-center button text-wrapper" bindtap="finish">
+          <text class="text_4">调整完成</text>
+        </view>
+      </view>
+      <view class="flex-col relative section_6" style="position: relative; left: 0rpx; top: -70rpx">
+        <view class="flex-row justify-between items-center">
+          <view class="flex-row items-center">
+            <text class="font_5">当前温度：</text>
+            <text wx:if="{{switchV_1==0}}" class="font_6 ml-4">{{realTem}}℃</text>
+            <text wx:else class="font_6 ml-4">{{32+realTem*1.8}}℉</text>
+          </view>
+          <van-switch
+            name="cfSwitch"
+            size="28.00"
+            class="switchV_1"
+            bind:change="onSwitchChange_1"
+            checked="{{ switchV_1 }}"
+          ></van-switch>
+        </view>
+        <view class="flex-col group_6">
+          <view class="flex-row items-baseline group_7">
+            <text class="font_5">当前湿度：</text>
+            <text class="font_6 ml-4">80%</text>
+          </view>
+          <view class="flex-row justify-end relative view">
+            <text class="font">℃</text>
+            <text class="font_3 ml-22">℉</text>
+          </view>
+        </view>
+        <view class="flex-row items-center group_8">
+          <view class="flex-row items-center group_9">
+            <view class="flex-col justify-start items-center text-wrapper_2">
+              <text class="font_2 text_10">制冷</text>
+            </view>
+            <text class="font_5 text_9">建议温度区间：</text>
+          </view>
+          <text wx:if="{{switchV_1==0}}" class="font_6 ml-8">15℃-20℃</text>
+          <text wx:else class="font_6 ml-8">60℉-68℉</text>
+        </view>
+      </view>
+      <view class="flex-col section_7" style="position: relative; left: 0rpx; top: -64rpx">
+        <view class="flex-row justify-between items-center">
+          <view class="flex-row items-center button_2">
+            <text class="font_6 text_11">制冷</text>
+            <image
+              class="shrink-0 image_12 ml-4"
+              src="../../imgs/Vector.png"
+            />
+          </view>
+          <view class="flex-row items-center">
+            <text class="font_5">当前整体温度：</text>
+            <text class="font_6 ml-2">{{realTem}}℃</text>
+          </view>
+        </view>
+        <view class="flex-col mt-28">
+        <!-- 滑块上面显示温度的部分 -->
+          <!-- <text  class="self-start text_12">{{setTem}}</text> -->
+          <view class="view1 flex-row items-center self-stretch mt-12">
+          <!-- 降低温度 -->
+            <van-button size="normal" round plain bind:click="onJianTem">-</van-button>
+
+            <!-- 滑动条部分 -->
+            <van-slider step="1" bar-height="12px" max="35" min="15" class="flex-col justify-start flex-1 relative group_10 ml-4" value="{{ setTem }}" use-button-slot="1" bind:drag="onDrag">
+                <!-- <view class="custom-button" slot="button">{{ setTem }}</view> -->
+                <view slot="button" class="huakuai" style="width: 76rpx; height: 50rpx; display: block; box-sizing: border-box">{{ setTem }}</view>
+            </van-slider>
+
+            <!-- 增加温度 -->
+            <van-button  style="right : 0"  class="image_1 image_13 ml-4" round plain bind:click="onAddTem">+</van-button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

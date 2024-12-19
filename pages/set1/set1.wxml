@@ -1,0 +1,174 @@
+<view class="flex-col page">
+  <view class="flex-col flex-1 group_3">
+    <view class="flex-col justify-start items-end relative group_2">
+      <image
+        class="image_7"
+        src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=dfd6bc7bd48eb3e44886475292d79d9b.png"
+      />
+      <image
+        class="image_5 pos"
+        src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=e821ca54e28d3a88ee525f2758be87f7.png"
+      />
+      <view class="flex-row justify-between section_3 pos_2">
+        <text class="font text">当前状态</text>
+        <view class="flex-row items-center">
+          <text class="font_2 text_2">坐着做重型肢体运动</text>
+          <image
+            class="shrink-0 image_9 ml-5"
+            src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=317f668e2d5a264fc0b4771697d525f2.png"
+          />
+        </view>
+      </view>
+    </view>
+    <view class="flex-col relative group_4">
+      <view class="flex-col section_4">
+        <view class="flex-row justify-between items-center">
+          <view class="flex-row items-center">
+            <text class="font text_3">当前温度：</text>
+            <text class="ml-4 font_3">32℃</text>
+          </view>
+          <image
+            class="switch"
+            src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=c48ac676d09592cbde02f725610e375a.png"
+          />
+        </view>
+        <view class="flex-col group_5">
+          <view class="flex-row items-baseline group_7">
+            <text class="font text_6">当前湿度：</text>
+            <text class="ml-4 font_2 text_7">80%</text>
+          </view>
+          <view class="flex-row justify-end relative group_6">
+            <text class="text_4">℃</text>
+            <text class="ml-22 font_4 text_5">℉</text>
+          </view>
+        </view>
+        <view class="flex-row items-center group_8">
+          <view class="flex-row items-center group_9">
+            <view class="flex-col justify-start items-center text-wrapper">
+              <text class="font_5 text_9">制冷</text>
+            </view>
+            <text class="font text_8">建议温度区间：</text>
+          </view>
+          <text class="font_3 ml-9">15℃-20℃</text>
+        </view>
+      </view>
+      <view class="mt-8 flex-col section_5">
+        <view class="flex-row justify-between items-center group_10">
+          <text class="font_6 text_10">当前部位：胸部（左）</text>
+          <image
+            class="image_9"
+            src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=2a9d1d4c33dd4d3925869400ff3559b8.png"
+          />
+        </view>
+        <view class="flex-col group_11">
+          <view class="flex-row justify-between self-stretch">
+            <view class="flex-row items-center button">
+              <text class="font_6 text_11">制冷</text>
+              <image
+                class="ml-4 shrink-0 image_10"
+                src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=78a89c38a79972c8caa13a3d06a7ef40.png"
+              />
+            </view>
+            <image
+              class="switch"
+              src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=b9f94f82f99ef53f1d9f35fea81cc6db.png"
+            />
+          </view>
+          <text class="self-end font_4 text_12">开关</text>
+          <text class="self-start text_13">15℃</text>
+          <view class="flex-row items-center self-stretch group_12">
+            <image
+              class="shrink-0 image_11"
+              src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=130e83d4270328adb9904805b9fcf838.png"
+            />
+            <view class="ml-4 flex-col justify-start button_2 group_13">
+              <view class="flex-col justify-start items-start section_6">
+                <view class="flex-col justify-start items-end section_7"><view class="section_8"></view></view>
+              </view>
+              <view class="flex-col justify-start items-center text-wrapper_2 pos_3">
+                <text class="font_5 text_14">推荐温度</text>
+              </view>
+            </view>
+            <image
+              class="ml-4 shrink-0 image_12"
+              src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=062d758daaad6dedfa51f654038818dc.png"
+            />
+          </view>
+          <view class="flex-col justify-start items-center button_3 text-wrapper_3">
+            <text class="font_6 text_15">调整完成</text>
+          </view>
+        </view>
+      </view>
+      <view class="mt-8 flex-row justify-between section_3">
+        <text class="font_6 text_16">胸部（右）</text>
+        <view class="flex-row items-center">
+          <text class="font_2">制冷 15℃</text>
+          <image
+            class="shrink-0 image_9 ml-7"
+            src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=317f668e2d5a264fc0b4771697d525f2.png"
+          />
+        </view>
+      </view>
+      <view class="mt-8 flex-row justify-between section_3">
+        <text class="font_6 text_17">上背部（右）</text>
+        <view class="flex-row items-center">
+          <text class="font_2">制冷 15℃</text>
+          <image
+            class="shrink-0 image_9 ml-7"
+            src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=317f668e2d5a264fc0b4771697d525f2.png"
+          />
+        </view>
+      </view>
+      <view class="mt-8 flex-row justify-between section_3">
+        <text class="font_6">上背部（左）</text>
+        <view class="flex-row items-center">
+          <text class="font_2">制冷 15℃</text>
+          <image
+            class="shrink-0 image_9 ml-7"
+            src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=317f668e2d5a264fc0b4771697d525f2.png"
+          />
+        </view>
+      </view>
+      <view class="mt-8 flex-row justify-between section_3">
+        <text class="font_6 text_18">腹部</text>
+        <view class="flex-row items-center">
+          <text class="font_2">制冷 15℃</text>
+          <image
+            class="shrink-0 image_9 ml-7"
+            src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=317f668e2d5a264fc0b4771697d525f2.png"
+          />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="flex-row justify-between items-center tab-bar">
+    <view class="flex-col items-center group_14">
+      <image
+        class="image_13"
+        src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=1ef093e80f684df7a78d514ccea64ac0.png"
+      />
+      <text class="font_5 text_19 mt-3">首页</text>
+    </view>
+    <view class="flex-col items-center group_15">
+      <image
+        class="image_13"
+        src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=3e6e14bfd46507985a207fe403eb71dd.png"
+      />
+      <text class="font_5 text_20 mt-1">自定义</text>
+    </view>
+    <view class="flex-col items-center group_16">
+      <image
+        class="image_13"
+        src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=c2e788a255d299e934659f1fa09a0deb.png"
+      />
+      <text class="font_5 text_21 mt-3">温度记录</text>
+    </view>
+    <view class="flex-col items-center group_17">
+      <image
+        class="image_13"
+        src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=f432ff3c72014e823b505b607f40f63a.png"
+      />
+      <text class="font_5 text_22 mt-3">我的</text>
+    </view>
+  </view>
+</view>

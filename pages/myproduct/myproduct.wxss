@@ -1,0 +1,110 @@
+.ml-5 {
+  margin-left: 10rpx;
+}
+.ml-19 {
+  margin-left: 38rpx;
+}
+.ml-13 {
+  margin-left: 26rpx;
+}
+.page {
+  background-color: #eff6f9;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.font {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  line-height: 26.1rpx;
+  font-weight: 600;
+  color: #252525;
+}
+.group_3 {
+  padding: 0 30rpx 460rpx;
+  overflow-y: auto;
+}
+.group_2 {
+  margin-top: 59.86rpx;
+  padding-top: 60.86rpx;
+}
+.image_9 {
+  margin-right: 40.98rpx;
+  filter: blur(60.2rpx);
+  width: 530rpx;
+  height: 530rpx;
+}
+.image_6 {
+  width: 700rpx;
+  height: 700rpx;
+}
+.pos {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.section_3 {
+  margin-top: -145.86rpx;
+  padding: 0 30rpx 68rpx;
+  background-color: #ffffff;
+  border-radius: 32rpx;
+}
+.group_4 {
+  padding: 54.76rpx 0 68rpx;
+}
+.font_2 {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  line-height: 26.1rpx;
+  color: #24242480;
+}
+.text_2 {
+  line-height: 26.02rpx;
+}
+.font_3 {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  line-height: 20.78rpx;
+  color: #252525;
+}
+.text_3 {
+  line-height: 25.62rpx;
+}
+.input {
+  flex: 1 1 0;
+}
+.group_5 {
+  border-radius: 16rpx;
+  height: 84rpx;
+  border: solid 2rpx #dddddd;
+}
+.button {
+  flex-shrink: 0;
+}
+.text-wrapper {
+  padding: 28.7rpx 0 27.48rpx;
+  border-radius: 16rpx;
+  width: 136rpx;
+  height: 84rpx;
+  border: solid 2rpx #dddddd;
+}
+.text_4 {
+  font-size: 26rpx;
+  line-height: 23.82rpx;
+}
+.button_2 {
+  align-self: center;
+}
+.text-wrapper_2 {
+  padding: 30.36rpx 0 27.12rpx;
+  border-radius: 70rpx;
+  overflow: hidden;
+  width: 428rpx;
+  border: solid 2rpx #dddddd;
+}
+.text_5 {
+  font-size: 26rpx;
+  line-height: 24.52rpx;
+}

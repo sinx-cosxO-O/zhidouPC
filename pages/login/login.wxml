@@ -1,0 +1,35 @@
+<view class="flex-col page">
+  <view class="flex-col flex-1 group_2">
+    <view class="self-center section_3"></view>
+    <view class="flex-col items-center self-stretch group_3">
+      <text class="text">Hello,欢迎使用</text>
+      <text class="font text_2 mt-11">制冷背心23454654</text>
+    </view>
+    <view class="flex-col self-stretch group_4">
+      <image
+        class="image_8 input"
+        src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=72a5ee113b72ef79c6f1d94c050d5f61.png"
+      />
+      <view class="flex-row items-center checkbox group_5 mt-23">
+        <image
+          class="shrink-0 input"
+          src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=ebb5c283929c74f5f85685f82c5a2acf.png"
+        />
+        <view class="ml-8 group_6">
+          <text class="font text_3">已阅读且同意</text>
+          <text class="font_2 text_4">《用户协议》</text>
+          <text class="font text_5">和</text>
+          <text class="font_2">《个人信息保护政策》</text>
+        </view>
+      </view>
+      <view class="flex-col self-stretch mt-23">
+        <view class="flex-col justify-start items-center button">
+          <text class="font_3 text_6">手机号快捷登录</text>
+        </view>
+        <view class="flex-col justify-start items-center button_2 mt-13">
+          <text class="font_3 text_7">其他手机号注册</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

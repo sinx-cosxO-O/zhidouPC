@@ -1,0 +1,88 @@
+.page {
+  background-color: #eff7fa;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.font {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  line-height: 26.16rpx;
+  color: #252525;
+}
+.group_2 {
+  padding: 150rpx 30rpx 100rpx;
+  overflow-y: auto;
+}
+.section_1 {
+  padding: 46.96rpx 32rpx 45.04rpx;
+  background-color: #ffffff;
+  border-radius: 32rpx;
+}
+.image_8 {
+  width: 42rpx;
+  height: 32rpx;
+}
+.font_2 {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  line-height: 26.16rpx;
+  color: #242424;
+}
+.image_9 {
+  width: 8rpx;
+  height: 16rpx;
+}
+.image_1 {
+  margin-right: 4rpx;
+}
+.section_3 {
+  padding: 43rpx 36rpx 43rpx 36.8rpx;
+  background-color: #ffffff;
+  border-radius: 32rpx;
+}
+.image_10 {
+  width: 36rpx;
+  height: 38rpx;
+}
+.text_2 {
+  line-height: 26.02rpx;
+}
+.group_3 {
+  margin-top: 67.38rpx;
+}
+.text_3 {
+  margin-left: 32.18rpx;
+  color: #252525;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 600;
+  line-height: 30.08rpx;
+}
+.section_4 {
+  margin-top: 16rpx;
+  padding: 48.82rpx 30.98rpx 49.04rpx;
+  background-color: #ffffff;
+  border-radius: 32rpx;
+}
+.view {
+  margin-top: 38.54rpx;
+}
+.image_11 {
+  width: 16rpx;
+  height: 8rpx;
+}
+.button {
+  margin: 142rpx 44rpx 0;
+}
+.text-wrapper {
+  padding: 31.3rpx 0 32.94rpx;
+  background-image: linear-gradient(145.8deg, #66e3ff 5.6%, #196fee 108.4%);
+  border-radius: 68rpx;
+}
+.text_4 {
+  color: #ffffff;
+  font-size: 30rpx;
+  line-height: 27.76rpx;
+}

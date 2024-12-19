@@ -1,0 +1,49 @@
+<view margin-top="150rpx" bindtap="returnJump" style="position: relative; left: 0rpx; top: 118rpx; width: 750rpx; height: 68rpx; display: block; box-sizing: border-box" bindtap="returnJump">
+        <text class="font_2 text_2"> {{'< '}} 返回</text>    
+</view>
+<view class="flex-col page">
+  <view class="flex-col flex-1 group_2">
+    <view class="flex-col list">
+      <view
+        class="flex-col section_3 list-item mt-8"
+        wx:for="{{items}}"
+        wx:for-item="item"
+        wx:for-index="index"
+        wx:key="index"
+      >
+        <text class="self-start font text_2">这是一个单选题问题的题目</text>
+        <view class="flex-col self-stretch group_3 mt-23">
+          <view class="flex-row items-center">
+            <image
+              class="image_8"
+              src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=72a5ee113b72ef79c6f1d94c050d5f61.png"
+            />
+            <text class="font_2 ml-7">A.这是这个问题的其中一个选项</text>
+          </view>
+          <view class="flex-row items-center mt-19">
+            <image
+              class="image_8"
+              src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=ebb5c283929c74f5f85685f82c5a2acf.png"
+            />
+            <text class="font_2 ml-8">B.这是这个问题的其中一个选项</text>
+          </view>
+          <view class="flex-row items-center mt-19">
+            <image
+              class="image_8"
+              src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=ebb5c283929c74f5f85685f82c5a2acf.png"
+            />
+            <text class="font_2 ml-8">C.这是这个问题的其中一个选项</text>
+          </view>
+          <view class="flex-row items-center mt-19">
+            <image
+              class="image_8"
+              src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=ebb5c283929c74f5f85685f82c5a2acf.png"
+            />
+            <text class="font_2 ml-8">D.这是这个问题的其中一个选项</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="flex-col justify-start items-center button text-wrapper mt-31" bindtap="finish"><text class="text_3">保存</text></view>
+  </view>
+</view>

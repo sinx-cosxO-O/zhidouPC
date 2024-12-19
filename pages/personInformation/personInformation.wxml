@@ -1,0 +1,54 @@
+<view class="flex-col page">
+  <view class="flex-col flex-1 group_2">
+    <view bindtap="returnJump">
+        <text class="font_2 text_2"> {{'< '}} 返回</text>    
+    </view>
+    
+    <view class="flex-col items-center">
+      <image
+        class="image_8"
+        src="../../imgs/userphoto.png"
+      />
+      <text class="font_2 text_2 mt-14">点击更换头像</text>
+    </view>
+    <view class="flex-col group_3">
+      <view class="flex-row section_3">
+        <text class="font text_3">用户昵称</text>
+        <text class="font_2 ml-16">微信用户8897</text>
+      </view>
+      <view class="flex-row justify-center items-center relative section_4">
+        <text class="font text_4 pos">性别</text>
+        <view class="flex-row">
+          <view class="flex-row items-center equal-division-item_1">
+            <van-checkbox icon-size="15px" value="{{ boy }}" bind:change="onChangeBoy">男</van-checkbox>
+          </view>
+          <view class="flex-row items-center equal-division-item">
+            <!-- <view class="group_4"></view> -->
+            <van-checkbox icon-size="15px" value="{{ girl }}" bind:change="onChangeGirl">女</van-checkbox>
+          </view>
+        </view>
+      </view>
+      <view class="flex-col list">
+        <view
+          class="flex-row justify-between items-center section_6 list-item mt-8"
+          wx:for="{{items}}"
+          wx:for-item="item"
+          wx:for-index="index"
+          wx:key="index"
+        >
+          <view class="flex-row items-center">
+            <text class="font text_7">出生日期</text>
+            <text class="font_2 text_8 ml-17">1999-09-09</text>
+          </view>
+          <image
+            class="image_10"
+            src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=317f668e2d5a264fc0b4771697d525f2.png"
+          />
+        </view>
+      </view>
+    </view>
+    <view class="flex-col justify-start items-center button text-wrapper">
+      <text class="font_2 text_11">保存</text>
+    </view>
+  </view>
+</view>

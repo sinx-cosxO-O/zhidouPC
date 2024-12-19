@@ -1,0 +1,41 @@
+<view margin-top="150rpx" bindtap="returnJump" style="position: relative; left: 0rpx; top: 118rpx; width: 750rpx; height: 68rpx; display: block; box-sizing: border-box" bindtap="returnJump">
+        <text class="font_2 text_2"> {{'< '}} 返回</text>    
+</view><view class="flex-col page">
+  <view class="flex-col justify-start flex-1 group_2">
+    <view class="flex-col section_3">
+      <view class="flex-row">
+        <text class="font_2 text_2">公司名称：</text>
+        <text class="font text_3 ml-4">重庆明月湖智能发展有限公司</text>
+      </view>
+      <view class="flex-col group_3">
+        <view class="flex-row items-center">
+          <text class="font_2 text_4">公司邮箱：</text>
+          <text class="font text_5 ml-3">junglejyj@gmail.com</text>
+        </view>
+        <view class="flex-row items-center mt-16">
+          <text class="font_2 text_6">公司电话：</text>
+          <text class="font_3 text_7">13778899426</text>
+          <image
+            class="image_8"
+            src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=2d8805fc042676dc1eb3e848ea107444.png"
+          />
+        </view>
+        <view class="flex-row mt-16">
+          <text class="font_2 text_8">公司地址：</text>
+          <text class="font ml-4">重庆市渝北区龙兴镇卓越路19号</text>
+        </view>
+        <view class="flex-row items-baseline mt-16">
+          <text class="font_2 text_9">公司网址：</text>
+          <text class="font_3 ml-4">www.cooltec.com</text>
+        </view>
+      </view>
+      <view class="flex-col items-center group_4">
+        <image
+          class="image_9"
+          src="../../imgs/erweima.png"
+        />
+        <text class="text_10 mt-1">扫码了解更多</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,267 @@
+.ml-5 {
+  margin-left: 10rpx;
+}
+.ml-21 {
+  margin-left: 42rpx;
+}
+.ml-11 {
+  margin-left: 22rpx;
+}
+.mt-9 {
+  margin-top: 18rpx;
+}
+.mt-11 {
+  margin-top: 22rpx;
+}
+.mt-33 {
+  margin-top: 66rpx;
+}
+.ml-7 {
+  margin-left: 14rpx;
+}
+.mt-23 {
+  margin-top: 46rpx;
+}
+.page {
+  background-color: #eff6f9;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.section {
+  padding: 24rpx 28rpx 188rpx 34rpx;
+  background-image: linear-gradient(115deg, #66e3ff 5.6%, #196fee 108.4%);
+}
+.group {
+  padding-left: 8rpx;
+  padding-top: 20rpx;
+}
+.image {
+  border-radius: 48rpx;
+  width: 108rpx;
+  height: 42rpx;
+}
+.image_2 {
+  width: 34rpx;
+  height: 22rpx;
+}
+.image_3 {
+  width: 30rpx;
+  height: 22rpx;
+}
+.image_4 {
+  width: 48rpx;
+  height: 22rpx;
+}
+.group_2 {
+  padding: 16rpx 0 24rpx;
+}
+.pos_2 {
+  position: absolute;
+  left: 0;
+  top: 4rpx;
+}
+.text-wrapper {
+  padding: 8rpx 0;
+  background-color: #ffffff;
+  border-radius: 46rpx;
+  overflow: hidden;
+  width: 76rpx;
+  height: 44rpx;
+}
+.font {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  line-height: 25.96rpx;
+  font-weight: 600;
+  color: #252525;
+}
+.text {
+  color: #2783f2;
+  line-height: 25.4rpx;
+}
+.font_2 {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  line-height: 25.96rpx;
+  font-weight: 600;
+  color: #ffffff;
+}
+.text_2 {
+  line-height: 24.84rpx;
+}
+.text_3 {
+  line-height: 25.08rpx;
+}
+.text_4 {
+  line-height: 25.18rpx;
+}
+.section_2 {
+  padding: 12rpx 24rpx;
+  background-color: #ffffff;
+  border-radius: 37.1rpx;
+  border-left: solid 1rpx #e9e9e9;
+  border-right: solid 1rpx #e9e9e9;
+  border-top: solid 1rpx #e9e9e9;
+  border-bottom: solid 1rpx #e9e9e9;
+}
+.pos {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.image-wrapper {
+  width: 38rpx;
+}
+.image_6 {
+  width: 38rpx;
+  height: 14rpx;
+}
+.section_3 {
+  background-color: #e9e9e9;
+  width: 1rpx;
+  height: 40rpx;
+}
+.image_5 {
+  width: 36rpx;
+  height: 36rpx;
+}
+.group_3 {
+  margin-top: -152rpx;
+}
+.group_4 {
+  padding: 0 30rpx;
+}
+.section_4 {
+  padding: 30rpx 28rpx 64rpx;
+  background-color: #ffffff;
+  border-radius: 32rpx;
+}
+.text_5 {
+  line-height: 26.34rpx;
+}
+.switch {
+  border-radius: 42rpx;
+  width: 106rpx;
+  height: 56rpx;
+}
+.section_5 {
+  background-color: #ff9e2c;
+  border-radius: 20rpx;
+  width: 16rpx;
+  height: 16rpx;
+}
+.font_3 {
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  line-height: 20.4rpx;
+  color: #24242480;
+}
+.section_6 {
+  background-color: #2ce5ff;
+  border-radius: 20rpx;
+  width: 16rpx;
+  height: 16rpx;
+}
+.text_6 {
+  line-height: 20.38rpx;
+}
+.section_7 {
+  background-color: #ffdd2c;
+  border-radius: 20rpx;
+  width: 16rpx;
+  height: 16rpx;
+}
+.group_5 {
+  margin-right: 16rpx;
+}
+.font_4 {
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  line-height: 18.56rpx;
+  color: #252525;
+}
+.text_7 {
+  font-size: 24rpx;
+  line-height: 20.26rpx;
+}
+.font_5 {
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  line-height: 16.32rpx;
+  color: #25252580;
+}
+.text_8 {
+  font-size: 24rpx;
+  line-height: 19.92rpx;
+}
+.group_6 {
+  margin-top: 72rpx;
+}
+.text_9 {
+  margin-top: 116rpx;
+}
+.image_7 {
+  margin-right: 20rpx;
+  height: 174rpx;
+}
+.group_7 {
+  margin-top: 96rpx;
+}
+.group_8 {
+  padding-left: 64rpx;
+}
+.font_6 {
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  line-height: 16.32rpx;
+  color: #929292;
+}
+.text_10 {
+  margin-left: 32rpx;
+  line-height: 26.34rpx;
+}
+.section_8 {
+  margin-top: 744rpx;
+  background-color: #ffffff;
+  height: 98rpx;
+}
+.pos_3 {
+  position: absolute;
+  left: 30rpx;
+  right: 30rpx;
+  top: 750rpx;
+}
+.list-item {
+  padding: 40rpx 32rpx 60rpx;
+  background-color: #ffffff;
+  border-radius: 32rpx;
+}
+.list-item:first-child {
+  margin-top: 0;
+}
+.text_11 {
+  line-height: 25.22rpx;
+}
+.text_12 {
+  font-size: 24rpx;
+  line-height: 17.8rpx;
+}
+.image_8 {
+  width: 8rpx;
+  height: 16rpx;
+}
+.font_7 {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  line-height: 25.96rpx;
+  color: #24242480;
+}
+.font_8 {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  line-height: 23.64rpx;
+  color: #252525;
+}

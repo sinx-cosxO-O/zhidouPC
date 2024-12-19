@@ -1,0 +1,40 @@
+{
+    "description": "",
+    "packOptions": {
+        "ignore": [],
+        "include": []
+    },
+    "setting": {
+        "ignoreDevUnusedFiles": false,
+        "ignoreUploadUnusedFiles": true,
+        "urlCheck": false,
+        "es6": true,
+        "postcss": true,
+        "minified": true,
+        "newFeature": true,
+        "nodeModules": true,
+        "babelSetting": {
+            "ignore": [],
+            "disablePlugins": [],
+            "outputPath": ""
+        },
+        "enhance": true,
+        "packNpmManually": true,
+        "packNpmRelationList": [
+            {
+                "packageJsonPath": "./package.json",
+                "miniprogramNpmDistDir": "./miniprogram_npm/"
+            }
+        ],
+        "uglifyFileName": true
+    },
+    "compileType": "miniprogram",
+    "libVersion": "2.26.0",
+    "appid": "wx2a45d89009d3e7f6",
+    "projectname": "clothes",
+    "condition": {},
+    "editorSetting": {
+        "tabIndent": "insertSpaces",
+        "tabSize": 4
+    }
+}

@@ -1,0 +1,96 @@
+.mt-11 {
+  margin-top: 22rpx;
+}
+.page {
+  background-color: #ffffff;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.group_2 {
+  padding: 124rpx 76rpx 672rpx;
+  overflow-y: auto;
+}
+.text {
+  color: #252525;
+  font-size: 32rpx;
+  font-family: PingFang SC;
+  font-weight: 600;
+  line-height: 29.86rpx;
+}
+.font {
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  line-height: 20.62rpx;
+  color: #252525;
+}
+.text_2 {
+  font-size: 24rpx;
+  line-height: 22.3rpx;
+}
+.group_3 {
+  margin-top: 48rpx;
+}
+.group_4 {
+  flex: 1 1 84rpx;
+}
+.button {
+  border-radius: 10rpx;
+  height: 100rpx;
+  border-left: solid 2rpx #d8d8d8;
+  border-right: solid 2rpx #d8d8d8;
+  border-top: solid 2rpx #d8d8d8;
+  border-bottom: solid 2rpx #d8d8d8;
+}
+.text_3 {
+  color: #25252580;
+  font-size: 24rpx;
+  line-height: 22.46rpx;
+}
+.checkbox {
+  margin-top: 184rpx;
+}
+.group_5 {
+  padding-left: 20rpx;
+  padding-right: 16rpx;
+}
+.image_8 {
+  width: 30rpx;
+  height: 30rpx;
+}
+.group_6 {
+  line-height: 20.62rpx;
+  height: 20.62rpx;
+}
+.text_4 {
+  line-height: 20.46rpx;
+}
+.font_2 {
+  font-size: 22rpx;
+  font-family: PingFang SC;
+  line-height: 20.62rpx;
+  color: #2681f2;
+}
+.text_5 {
+  line-height: 20.54rpx;
+}
+.text_6 {
+  line-height: 19.8rpx;
+}
+.button_2 {
+  margin-top: 46rpx;
+}
+.text-wrapper {
+  padding: 32rpx 0;
+  background-image: linear-gradient(147.4deg, #66e3ff 5.6%, #196fee 108.4%);
+  border-radius: 70rpx;
+  overflow: hidden;
+}
+.text_7 {
+  color: #ffffff;
+  font-size: 26rpx;
+  font-family: PingFang SC;
+  font-weight: 600;
+  line-height: 24.28rpx;
+}

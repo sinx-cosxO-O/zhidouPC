@@ -1,0 +1,78 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/my/my",
+        "pages/set/set",
+        "pages/set1/set1",
+        "pages/myproduct/myproduct",
+        "pages/personInformation/personInformation",
+        "pages/help/help",
+        "pages/questionnaire/questionnaire",
+        "pages/questionnaireFini/questionnaireFini",
+        "pages/load/load",
+        "pages/login/login",
+        "pages/register/register",
+        "pages/guide/guide",
+        "pages/yanzhengma/yanzhengma",
+        "pages/yinsitishi/yinsitishi",
+        "pages/chanpinshuomingshu/chanpinshuomingshu",
+        "pages/help2/help2",
+        "pages/realtem/realtem",
+        "pages/wendu/wendu",
+        "pages/wenduxiangqing_daochuqueren/wenduxiangqing_daochuqueren",
+        "custom-tab-bar/index"
+    ],
+    "tabBar": {
+        "selectedColor": "#31869B",
+        "list": [
+          {
+            "current": 0,
+            "pagePath": "pages/home/home",
+            "text": "首页",
+            "iconPath": "./imgs/home.png",
+            "selectedIconPath": "./imgs/home.png"
+          },
+          {
+            "current": 1,
+            "pagePath": "pages/set/set",
+            "text": "自定义",
+            "iconPath": "./imgs/set.png",
+            "selectedIconPath": "./imgs/set.png"
+          },
+          {
+            "current": 2,
+            "pagePath": "pages/wendu/wendu",
+            "text": "记录",
+            "iconPath": "./imgs/wendu.png",
+            "selectedIconPath": "./imgs/wendu.png"
+          },
+          {
+            "current": 3,
+            "pagePath": "pages/my/my",
+            "text": "我的",
+            "iconPath": "./imgs/my.png",
+            "selectedIconPath": "./imgs/my.png"
+          }
+        ]
+      },
+    "window": {
+        "navigationStyle": "custom"
+    },
+    "lazyCodeLoading": "requiredComponents",
+    "usingComponents": {
+        "van-button": "@vant/weapp/button/index",
+        "van-slider": "@vant/weapp/slider/index",
+        "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+        "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+        "van-tabbar": "@vant/weapp/tabbar/index",
+        "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+        "van-collapse": "@vant/weapp/collapse/index",
+        "van-collapse-item": "@vant/weapp/collapse-item/index",
+        "van-toast": "@vant/weapp/toast/index",
+        "van-field": "@vant/weapp/field/index",
+        "van-progress": "@vant/weapp/progress/index",
+        "van-checkbox": "@vant/weapp/checkbox/index",
+        "van-checkbox-group": "@vant/weapp/checkbox-group/index"
+        
+    }
+}

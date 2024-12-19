@@ -1,0 +1,250 @@
+<view class="flex-col page">
+  <view class="flex-col flex-1 group_3" style="width: 746rpx; height: 1460rpx; display: flex; box-sizing: border-box">
+    <view class="flex-col justify-start items-end relative group_2">
+      <image style="width: 628rpx; height: 610rpx; display: block; box-sizing: border-box"
+        class="image_7"
+        src="../../imgs/clothes1.png"
+      />
+      <view class="flex-row justify-between section_1 pos_2" style="width: 686rpx; height: 124rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 505rpx; position: absolute">
+        <text class="font text">当前状态</text>
+        <view class="flex-row items-center">
+            <view class="flex-row items-center">
+            <van-dropdown-menu plain="true" class="font_5" active-color="#1989fa">
+             <van-dropdown-item  class="font_5" value="{{ value1 }}" options="{{ option1 }}" />
+            </van-dropdown-menu>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="flex-col relative group_4">
+      <view class="flex-col section_4" style="width: 686rpx; height: 258rpx; display: flex; box-sizing: border-box">
+        <view class="flex-row justify-between items-center">
+          <view class="flex-row items-center">
+            <text class="font text_3">当前温度：</text>
+            <text class="font_3 ml-4">{{realTem}}℃</text>
+          </view>
+          <image
+            class="switch"
+            src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=c48ac676d09592cbde02f725610e375a.png"
+          />
+        </view>
+        <view class="flex-col group_5">
+          <view class="flex-row items-baseline group_7">
+            <text class="font text_6">当前湿度：</text>
+            <text class="font_2 text_7 ml-4">80%</text>
+          </view>
+          <view class="flex-row justify-end relative group_6">
+            
+            
+          </view>
+        </view>
+        <view class="flex-row items-center group_8">
+          <view class="flex-row items-center group_9">
+            <view class="flex-col justify-start items-center text-wrapper">
+              <text class="font_5 text_9">制冷</text>
+            </view>
+            <text class="font text_8">建议温度区间：</text>
+          </view>
+          <text class="font_3 ml-9">15℃-20℃</text>
+        </view>
+      </view>
+      <!-- vant胸部折叠栏 -->
+        <view class="flex-col section_5 mt-8">
+            <van-collapse value="{{ activeNames }}" bind:change="onChange">
+            <van-collapse-item class="font_6 text_10" title="胸部(左)" value="制冷{{leftChestTem}}℃" name="0">
+            <view class="flex-row justify-between self-stretch">
+                <view class="flex-row items-center button">
+                <text class="font_6 text_11">制冷</text>
+                <image
+                    class="shrink-0 image_10 ml-4"
+                    src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=78a89c38a79972c8caa13a3d06a7ef40.png"
+                />
+                </view>
+                <image
+                class="switch"
+                src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=b9f94f82f99ef53f1d9f35fea81cc6db.png"
+                />
+            </view>
+            <view class="flex-col mt-28">
+            <!-- 滑块上面显示温度的部分 -->
+            <!-- <text  class="self-start text_12">{{setTem}}</text> -->
+            <view class="view1 flex-row items-center self-stretch mt-12">
+            <!-- 降低温度 -->
+                <van-button size="normal" round plain bind:click="onJianLeftChestTem">-</van-button>
+
+                <!-- 滑动条部分 -->
+                <van-slider step="1" bar-height="12px" max="35" min="15" class="flex-col justify-start flex-1 relative  ml-4" value="{{ leftChestTem }}" use-button-slot="1" bind:drag="onDragLeftChest">
+                    <!-- <view class="custom-button" slot="button">{{ setTem }}</view> -->
+                    <view slot="button" class="huakuai" style="width: 76rpx; height: 50rpx; display: block; box-sizing: border-box">{{ leftChestTem }}</view>
+                </van-slider>
+
+                <!-- 增加温度 -->
+                <van-button  style="right : 0"  class="image_1 image_13 ml-4" round plain bind:click="onAddLeftChestTem">+</van-button>
+            </view>
+            <van-button round type="info" style="margin:auto" plain type="info" bindtap="buttonChange1">  调整完成  </van-button>
+            </view>
+                
+                </van-collapse-item>
+            </van-collapse>
+        </view>
+        <!-- vant胸部折叠栏 -->
+        <view class="flex-col section_5 mt-8">
+            <van-collapse value="{{ rightnames }}" bind:change="onChangeright">
+            <van-collapse-item class="font_6 text_10" title="胸部(右)" value="制冷{{rightChestTem}}℃" name="0">
+            <view class="flex-row justify-between self-stretch">
+                <view class="flex-row items-center button">
+                <text class="font_6 text_11">制冷</text>
+                <image
+                    class="shrink-0 image_10 ml-4"
+                    src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=78a89c38a79972c8caa13a3d06a7ef40.png"
+                />
+                </view>
+                <image
+                class="switch"
+                src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=b9f94f82f99ef53f1d9f35fea81cc6db.png"
+                />
+            </view>
+            <view class="flex-col mt-28">
+            <!-- 滑块上面显示温度的部分 -->
+            <!-- <text  class="self-start text_12">{{setTem}}</text> -->
+            <view class="view1 flex-row items-center self-stretch mt-12">
+            <!-- 降低温度 -->
+                <van-button size="normal" round plain bind:click="onJianRightChestTem">-</van-button>
+
+                <!-- 滑动条部分 -->
+                <van-slider step="1" bar-height="12px" max="35" min="15" class="flex-col justify-start flex-1 relative  ml-4" value="{{ leftChestTem }}" use-button-slot="1" bind:drag="onDragRightChest">
+                    <!-- <view class="custom-button" slot="button">{{ setTem }}</view> -->
+                    <view slot="button" class="huakuai" style="width: 76rpx; height: 50rpx; display: block; box-sizing: border-box">{{ rightChestTem }}</view>
+                </van-slider>
+
+                <!-- 增加温度 -->
+                <van-button  style="right : 0"  class="image_1 image_13 ml-4" round plain bind:click="onAddRightChestTem">+</van-button>
+            </view>
+            <van-button round type="info" style="margin:auto" plain type="info" bindtap="buttonChange2">  调整完成  </van-button>
+            </view>
+                
+                </van-collapse-item>
+            </van-collapse>
+        </view>
+
+      <!-- vant背部部折叠栏 -->
+      <view class="flex-col section_5 mt-8">
+            <van-collapse value="{{ leftBackNames }}" bind:change="onChangeLeftBack">
+            <van-collapse-item class="font_6 text_10" title="上背部(左)" value="制冷{{leftBackTem}}℃" name="0">
+            <view class="flex-row justify-between self-stretch">
+                <view class="flex-row items-center button">
+                <text class="font_6 text_11">制冷</text>
+                <image
+                    class="shrink-0 image_10 ml-4"
+                    src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=78a89c38a79972c8caa13a3d06a7ef40.png"
+                />
+                </view>
+                <image
+                class="switch"
+                src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=b9f94f82f99ef53f1d9f35fea81cc6db.png"
+                />
+            </view>
+            <view class="flex-col mt-28">
+            <!-- 滑块上面显示温度的部分 -->
+            <!-- <text  class="self-start text_12">{{setTem}}</text> -->
+            <view class="view1 flex-row items-center self-stretch mt-12">
+            <!-- 降低温度 -->
+                <van-button size="normal" round plain bind:click="onJianLeftBackTem">-</van-button>
+
+                <!-- 滑动条部分 -->
+                <van-slider step="1" bar-height="12px" max="35" min="15" class="flex-col justify-start flex-1 relative  ml-4" value="{{ leftBackTem }}" use-button-slot="1" bind:drag="onDragLeftBack">
+                    <!-- <view class="custom-button" slot="button">{{ setTem }}</view> -->
+                    <view slot="button" class="huakuai" style="width: 76rpx; height: 50rpx; display: block; box-sizing: border-box">{{ leftBackTem }}</view>
+                </van-slider>
+
+                <!-- 增加温度 -->
+                <van-button  style="right : 0"  class="image_1 image_13 ml-4" round plain bind:click="onAddLeftBcakTem">+</van-button>
+            </view>
+            <van-button round type="info" style="margin:auto" plain type="info" bindtap="buttonChange3">  调整完成  </van-button>
+            </view>
+                
+                </van-collapse-item>
+            </van-collapse>
+        </view>
+
+        <!-- vant背部部折叠栏 -->
+      <view class="flex-col section_5 mt-8">
+            <van-collapse value="{{ rightBackNames }}" bind:change="onChangeRightBack">
+            <van-collapse-item class="font_6 text_10" title="上背部(右)" value="制冷{{rightBackTem}}℃" name="0">
+            <view class="flex-row justify-between self-stretch">
+                <view class="flex-row items-center button">
+                <text class="font_6 text_11">制冷</text>
+                <image
+                    class="shrink-0 image_10 ml-4"
+                    src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=78a89c38a79972c8caa13a3d06a7ef40.png"
+                />
+                </view>
+                <image
+                class="switch"
+                src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=b9f94f82f99ef53f1d9f35fea81cc6db.png"
+                />
+            </view>
+            <view class="flex-col mt-28">
+            <!-- 滑块上面显示温度的部分 -->
+            <!-- <text  class="self-start text_12">{{setTem}}</text> -->
+            <view class="view1 flex-row items-center self-stretch mt-12">
+            <!-- 降低温度 -->
+                <van-button size="normal" round plain bind:click="onJianRightBackTem">-</van-button>
+
+                <!-- 滑动条部分 -->
+                <van-slider step="1" bar-height="12px" max="35" min="15" class="flex-col justify-start flex-1 relative  ml-4" value="{{ rightBackTem }}" use-button-slot="1" bind:drag="onDragRightBack">
+                    <!-- <view class="custom-button" slot="button">{{ setTem }}</view> -->
+                    <view slot="button" class="huakuai" style="width: 76rpx; height: 50rpx; display: block; box-sizing: border-box">{{ rightBackTem }}</view>
+                </van-slider>
+
+                <!-- 增加温度 -->
+                <van-button  style="right : 0"  class="image_1 image_13 ml-4" round plain bind:click="onAddRightBackTem">+</van-button>
+            </view>
+            <van-button round type="info" style="margin:auto" plain type="info" bindtap="buttonChange4">  调整完成  </van-button>
+            </view>
+                
+                </van-collapse-item>
+            </van-collapse>
+        </view>
+        <!-- vant腹部部折叠栏 -->
+        <view class="flex-col section_5 mt-8">
+            <van-collapse value="{{ abdomenNames }}" bind:change="onChangeAbdomen">
+            <van-collapse-item class="font_6 text_10" title="腹部" value="制冷{{abdomenTem}}℃" name="0">
+            <view class="flex-row justify-between self-stretch">
+                <view class="flex-row items-center button">
+                <text class="font_6 text_11">制冷</text>
+                <image
+                    class="shrink-0 image_10 ml-4"
+                    src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=78a89c38a79972c8caa13a3d06a7ef40.png"
+                />
+                </view>
+                <image
+                class="switch"
+                src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=b9f94f82f99ef53f1d9f35fea81cc6db.png"
+                />
+            </view>
+            <view class="flex-col mt-28">
+            <!-- 滑块上面显示温度的部分 -->
+            <!-- <text  class="self-start text_12">{{setTem}}</text> -->
+            <view class="view1 flex-row items-center self-stretch mt-12">
+            <!-- 降低温度 -->
+                <van-button size="normal" round plain bind:click="onJianAbdomenTem">-</van-button>
+
+                <!-- 滑动条部分 -->
+                <van-slider step="1" bar-height="12px" max="35" min="15" class="flex-col justify-start flex-1 relative  ml-4" value="{{ abdomenTem }}" use-button-slot="1" bind:drag="onDragAbdomen">
+                    <!-- <view class="custom-button" slot="button">{{ setTem }}</view> -->
+                    <view slot="button" class="huakuai" style="width: 76rpx; height: 50rpx; display: block; box-sizing: border-box">{{ abdomenTem }}</view>
+                </van-slider>
+
+                <!-- 增加温度 -->
+                <van-button  style="right : 0"  class="image_1 image_13 ml-4" round plain bind:click="onAddAbdomenTem">+</van-button>
+            </view>
+            <van-button round type="info" style="margin:auto" plain type="info" bindtap="buttonChange5">  调整完成  </van-button>
+            </view>
+                
+                </van-collapse-item>
+            </van-collapse>
+        </view>
+    </view>
+  </view>
+</view>

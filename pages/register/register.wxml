@@ -1,0 +1,22 @@
+<view class="flex-col page">
+  <view class="flex-col flex-1 group_2">
+    <text class="self-start text">需要注册的手机号码</text>
+    <view class="flex-row items-center input group_3">
+      <text class="text_2">+86</text>
+      <view class="section_3 ml-9"></view>
+    </view>
+    <view class="flex-row items-center checkbox group_4">
+      <image
+        class="shrink-0 image_8"
+        src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=ebb5c283929c74f5f85685f82c5a2acf.png"
+      />
+      <view class="ml-8 group_5">
+        <text class="font text_3">已阅读且同意</text>
+        <text class="font_2 text_4">《用户协议》</text>
+        <text class="font text_5">和</text>
+        <text class="font_2">《个人信息保护政策》</text>
+      </view>
+    </view>
+    <view class="flex-col justify-start items-center button text-wrapper"><text class="text_6">下一步</text></view>
+  </view>
+</view>

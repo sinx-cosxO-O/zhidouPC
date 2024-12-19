@@ -1,0 +1,48 @@
+<view margin-top="150rpx" bindtap="returnJump" style="position: relative; left: 0rpx; top: 118rpx; width: 750rpx; height: 68rpx; display: block; box-sizing: border-box" bindtap="returnJump">
+        <text class="font_2 text_2"> {{'< '}} 返回</text>    
+</view>
+<view class="flex-col page">
+  <view class="flex-col flex-1 group_2">
+    <text class="self-center text_2">产品说明书</text>
+    <view class="flex-col self-stretch group_3 mt-26">
+      <view>
+        <text class="font text_3">中医理论</text>
+        <text class="font">认为：“人体是一个平衡的</text>
+        <text class="font text_3">有机整体</text>
+        <text class="font">，病弱的根本原因在于平衡失调。”</text>
+        <text class="font">
+          然而，人体的平衡，却时常受到内外各种因素的破坏：工作生活的压力、季节气候的变化、生理机构的老化等很多的原因让人穷于应付。
+        </text>
+        <text class="font text_3">生物保健口服液</text>
+        <text class="font">，遵循</text>
+        <text class="font text_3">自然法则</text>
+        <text class="font">，以特殊工艺从生物中提取有效的</text>
+        <text class="font text_3">活性物质</text>
+        <text class="font">，增强人的体质，从而迅速恢复被破坏的机能；并通过帮助</text>
+        <text class="font text_3">人体平衡</text>
+        <text class="font">地吸收膳食中的营养及各类元素，以保证</text>
+        <text class="font text_3">人体器官</text>
+        <text class="font">功能的物质所需，从而达到预防、防治疾病的保健目的。</text>
+      </view>
+      <view class="relative group_4">
+        <text class="font text_3">中医理论</text>
+        <text class="font">认为：“人体是一个平衡的</text>
+        <text class="font text_3">有机整体</text>
+        <text class="font">，病弱的根本原因在于平衡失调。”</text>
+        <text class="font">
+          然而，人体的平衡，却时常受到内外各种因素的破坏：工作生活的压力、季节气候的变化、生理机构的老化等很多的原因让人穷于应付。
+        </text>
+        <text class="font text_3">生物保健口服液</text>
+        <text class="font">，遵循</text>
+        <text class="font text_3">自然法则</text>
+        <text class="font">，以特殊工艺从生物中提取有效的</text>
+        <text class="font text_3">活性物质</text>
+        <text class="font">，增强人的体质，从而迅速恢复被破坏的机能；并通过帮助</text>
+        <text class="font text_3">人体平衡</text>
+        <text class="font">地吸收膳食中的营养及各类元素，以保证</text>
+        <text class="font text_3">人体器官</text>
+        <text class="font">功能的物质所需，从而达到预防、防治疾病的保健目的。</text>
+      </view>
+    </view>
+  </view>
+</view>

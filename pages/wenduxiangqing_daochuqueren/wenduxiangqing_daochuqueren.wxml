@@ -1,0 +1,147 @@
+<view class="flex-col justify-start relative page">
+  <view class="flex-col group">
+    <view class="flex-row justify-between items-center group_2">
+      <image
+        class="image"
+        src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=2abebfc3a6163351e18a2864a303c8ff.png"
+      />
+      <view class="flex-row">
+        <image
+          class="image_2"
+          src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=5c53b4dc5c32c57af3b342e6350fc483.png"
+        />
+        <image
+          class="image_3 ml-5"
+          src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=989e7daee00e3dd883893709dbc11387.png"
+        />
+        <image
+          class="image_4 ml-5"
+          src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=08ee6085763a295504e2e575ca4199d4.png"
+        />
+      </view>
+    </view>
+    <view class="mt-22 flex-row justify-between items-center">
+      <view class="flex-row items-center">
+        <image
+          class="shrink-0 image_5"
+          src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=8e0f13a3e48735e534105b71bce2fb8a.png"
+        />
+        <text class="font text ml-11">温度详情</text>
+      </view>
+      <view class="flex-row items-center section_2">
+        <view class="section_3"></view>
+        <image
+          class="image_6 ml-13"
+          src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=3015eb4ea30ff13e5bbbf87b180008e2.png"
+        />
+      </view>
+    </view>
+  </view>
+  <view class="flex-col justify-start section pos">
+    <view class="flex-col section_4">
+      <view class="flex-row justify-between items-end group_3">
+        <text class="font_2">我的使用报告</text>
+        <image
+          class="image_7"
+          src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=accc00b22d9d397d8417e614a679245e.png"
+        />
+      </view>
+      <view class="flex-col mt-17">
+        <view class="flex-col section_5">
+          <text class="self-start font_2 text_2">2024-05-16</text>
+          <view class="flex-col self-stretch mt-25">
+            <view class="flex-row items-center">
+              <text class="font_3">平均温度：</text>
+              <text class="ml-4 font_4 text_3">22℃</text>
+            </view>
+            <view class="flex-row mt-13">
+              <view class="flex-row justify-evenly items-center section_6 equal-division-item">
+                <text class="font_3">最高温度：</text>
+                <text class="font_5 text_4">32℃</text>
+              </view>
+              <view class="flex-row justify-evenly items-center section_6 equal-division-item_2 ml-15">
+                <text class="font_3">最低温度：</text>
+                <text class="font_5 text_5">12℃</text>
+              </view>
+            </view>
+          </view>
+          <view class="flex-col self-stretch mt-25">
+            <view class="flex-row items-baseline">
+              <text class="font_3">平均湿度：</text>
+              <text class="ml-4 font_4 text_6">40%</text>
+            </view>
+            <view class="flex-row mt-13">
+              <view class="flex-row justify-evenly items-center section_6 equal-division-item">
+                <text class="font_3">最高湿度：</text>
+                <text class="text_7">85%</text>
+              </view>
+              <view class="flex-row justify-evenly items-center section_6 equal-division-item_2 ml-15">
+                <text class="font_3">最低湿度：</text>
+                <text class="text_8">12%</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="flex-col list">
+          <view
+            class="flex-col mt-8 section_7 list-item"
+            wx:for="{{items}}"
+            wx:for-item="item"
+            wx:for-index="index"
+            wx:key="index"
+          >
+            <view class="flex-col">
+              <view class="flex-row justify-between items-center">
+                <text class="font text_9">温度记录</text>
+                <image
+                  class="image_8 switch"
+                  src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=a308ceb9f78900c83b6fb76569afcb4c.png"
+                />
+              </view>
+              <view class="mt-6 flex-row justify-between items-center">
+                <view class="flex-row">
+                  <view class="flex-row items-center">
+                    <view class="shrink-0 section_8"></view>
+                    <text class="ml-4 font_6">最高温度</text>
+                  </view>
+                  <view class="flex-row items-center ml-21">
+                    <view class="shrink-0 section_9"></view>
+                    <text class="ml-4 font_6 text_10">最低温度</text>
+                  </view>
+                  <view class="flex-row items-center ml-21">
+                    <view class="shrink-0 section_10"></view>
+                    <text class="ml-4 font_6">平均温度</text>
+                  </view>
+                </view>
+                <view class="flex-row group_4">
+                  <text class="font_7 text_11">℃</text>
+                  <text class="ml-22 font_8 text_12">℉</text>
+                </view>
+              </view>
+            </view>
+            <view class="flex-col mt-37">
+              <view class="flex-row items-start self-stretch">
+                <view class="flex-col items-center shrink-0">
+                  <text class="font_7 text_13">25℃</text>
+                  <text class="mt-50 font_7 text_14">15℃</text>
+                </view>
+                <image
+                  class="ml-16 flex-1 image_9"
+                  src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=8c9ba51f24725edb322660413f8e6f63.png"
+                />
+              </view>
+              <text class="self-start font_7 text_15">5℃</text>
+              <view class="flex-row justify-between self-stretch group_5">
+                <text class="font_9">00:00</text>
+                <text class="font_9">06:00</text>
+                <text class="font_9">12:00</text>
+                <text class="font_9">18:00</text>
+                <text class="font_9">24:00</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
