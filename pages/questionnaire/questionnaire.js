@@ -1,6 +1,6 @@
 Page({
   data: {
-    items: [null, null, null],
+    items: [null],
   },
 
   onShareAppMessage() {

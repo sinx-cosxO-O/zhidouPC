@@ -156,7 +156,7 @@ Page({
         return {};
     },
     onClick() {
-        wx.navigateTo({ url: '/pages/home/home' });
+        wx.navigateTo({ url: '/pages/HomePage/HomePage' });
     },
     onClick_1() {
         wx.navigateTo({ url: '/pages/realtem/realtem' });

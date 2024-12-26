@@ -16,7 +16,7 @@ Page({
   },
   kefuJump:function(){
       wx.navigateTo({
-        url: '/pages/help2/help2',
+        url: '/pages/ContactUs/ContactUs',
       })
   }
 });

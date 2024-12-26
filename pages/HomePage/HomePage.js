@@ -39,12 +39,13 @@ Page({
   onShareAppMessage() {
     return {};
   },
+  //开关-进入蓝牙连接界面
   onSwitchChange(event) {
     this.setData({
       switchV: event.detail,
     });
     wx.navigateTo({
-      url: '/pages/guide/guide',
+      url: '/pages/BlueTooth/BlueTooth',
     })
   },
   BlechangeTem(){

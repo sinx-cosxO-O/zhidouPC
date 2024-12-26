@@ -8,7 +8,7 @@ Page({
   },
   History:function(){
     wx.navigateTo({
-      url: '../../pages/wendu/wendu',
+      url: '../../pages/Record/Record',
     })
   }
 });

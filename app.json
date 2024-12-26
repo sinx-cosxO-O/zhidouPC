@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/home/home",
+    "pages/HomePage/HomePage",
     "pages/PersonalCenter/PersonalCenter",
-    "pages/set/set",
+    "pages/Customization/Customization",
     "pages/set1/set1",
     "pages/myproduct/myproduct",
     "pages/PersonInformation/PersonInformation",
@@ -12,13 +12,13 @@
     "pages/load/load",
     "pages/login/login",
     "pages/register/register",
-    "pages/guide/guide",
+    "pages/BlueTooth/BlueTooth",
     "pages/VerificationCode/VerificationCode",
-    "pages/yinsitishi/yinsitishi",
+    "pages/PrivacyNotice/PrivacyNotice",
     "pages/ProductDescription/ProductDescription",
-    "pages/help2/help2",
+    "pages/ContactUs/ContactUs",
     "pages/realtem/realtem",
-    "pages/wendu/wendu",
+    "pages/Record/Record",
     "pages/wenduxiangqing_daochuqueren/wenduxiangqing_daochuqueren",
     "custom-tab-bar/index"
   ],
@@ -27,21 +27,21 @@
     "list": [
       {
         "current": 0,
-        "pagePath": "pages/home/home",
+        "pagePath": "pages/HomePage/HomePage",
         "text": "首页",
         "iconPath": "./imgs/home.png",
         "selectedIconPath": "./imgs/home.png"
       },
       {
         "current": 1,
-        "pagePath": "pages/set/set",
+        "pagePath": "pages/Customization/Customization",
         "text": "自定义",
         "iconPath": "./imgs/set.png",
         "selectedIconPath": "./imgs/set.png"
       },
       {
         "current": 2,
-        "pagePath": "pages/wendu/wendu",
+        "pagePath": "pages/Record/Record",
         "text": "制作记录",
         "iconPath": "./imgs/wendu.png",
         "selectedIconPath": "./imgs/wendu.png"

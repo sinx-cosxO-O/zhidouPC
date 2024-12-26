@@ -1,3 +1,7 @@
+<view margin-top="150rpx" bindtap="returnJump" style="position: relative; left: 0rpx; top: 93rpx; width: 750rpx; height: 68rpx; display: block; box-sizing: border-box" bindtap="returnJump">
+        <text class="font_4 text_4"> {{'< '}} 返回</text>    
+</view>
+
 <wxs module="utils">
 module.exports.max = function(n1, n2) {
   return Math.max(n1, n2)

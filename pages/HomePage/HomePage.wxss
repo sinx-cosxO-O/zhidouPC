@@ -328,6 +328,15 @@
   width: 82rpx;
   height: 76.76rpx;
 }
+.font_7 {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  line-height: 26.1rpx;
+  color: #24242480;
+}
+.text_15 {
+  line-height: 26.02rpx;
+}
 .tapimg1{  
     width: 150rpx;
     height: 150rpx;

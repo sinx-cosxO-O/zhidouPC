@@ -18,7 +18,7 @@
             </van-dropdown-menu>
           </view>
         </view>
-        <text class="font_3 pos_8">开关</text>
+        <text class="font_3 pos_8" style="position: absolute; left: 18rpx; top: 229rpx">连接设备</text>
         <van-switch
           class="pos_7 switchV"
           name="clothesSwitch"

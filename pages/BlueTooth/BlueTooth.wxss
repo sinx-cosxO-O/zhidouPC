@@ -107,3 +107,12 @@
   font-weight: 600;
   line-height: 24.5rpx;
 }
+.font_4 {
+  font-size: 28rpx;
+  font-family: PingFang SC;
+  line-height: 26.1rpx;
+  color: #24242480;
+}
+.text_4 {
+  line-height: 26.02rpx;
+}

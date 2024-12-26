@@ -220,4 +220,10 @@ Page({
     wx.closeBluetoothAdapter()
     this._discoveryStarted = false
   },
+  returnJump:function(){
+    console.log("11111");
+    wx.switchTab({
+      url: '/pages/HomePage/HomePage',
+    })
+  }
 })
