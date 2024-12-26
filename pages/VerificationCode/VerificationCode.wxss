@@ -1,3 +1,4 @@
+/* pages/VerificationCode/VerificationCode.wxss */
 .mt-11 {
   margin-top: 22rpx;
 }

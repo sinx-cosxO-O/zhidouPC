@@ -14,7 +14,7 @@ Page({
   returnJump:function(){
       console.log("11111");
       wx.switchTab({
-        url: '/pages/my/my',
+        url: '/pages/PersonalCenter/PersonalCenter',
       })
   },
   changeName(event){

@@ -6,7 +6,7 @@ Page({
   },
   returnJump:function(){
       wx.switchTab({
-        url: '/pages/my/my',
+        url: '/pages/PersonalCenter/PersonalCenter',
       })
   }
 });

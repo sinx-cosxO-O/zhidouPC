@@ -162,7 +162,7 @@ Page({
         wx.navigateTo({ url: '/pages/realtem/realtem' });
     },
     onClick_2() {
-        wx.navigateTo({ url: '/pages/my/my' });
+        wx.navigateTo({ url: '/pages/PersonalCenter/PersonalCenter' });
     },
     onChange(event) {
         this.setData({

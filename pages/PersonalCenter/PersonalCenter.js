@@ -11,7 +11,7 @@ Page({
   },
   personinfoJump:function(){
       wx.navigateTo({
-        url: '/pages/personInformation/personInformation',
+        url: '/pages/PersonInformation/PersonInformation',
       })
   },
   helpJump:function(){

@@ -6,12 +6,12 @@ Page({
   },
   returnJump:function(){
       wx.switchTab({
-        url: '/pages/my/my',
+        url: '/pages/PersonalCenter/PersonalCenter',
       })
   },
   shuomingshuJump:function(){
       wx.navigateTo({
-        url: '/pages/chanpinshuomingshu/chanpinshuomingshu',
+        url: '/pages/ProductDescription/ProductDescription',
       })
   },
   kefuJump:function(){

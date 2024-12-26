@@ -38,7 +38,7 @@
         >
           <view class="flex-row items-center">
             <text class="font text_7">出生日期</text>
-            <text class="font_2 text_8 ml-17">1999-09-09</text>
+            <text class="font_2 text_8 ml-17">2000-01-01</text>
           </view>
           <image
             class="image_10"

@@ -126,7 +126,7 @@ Page({
      })
   },
   onClick() {
-    wx.navigateTo({ url: '/pages/my/my' });
+    wx.navigateTo({ url: '/pages/PersonalCenter/PersonalCenter' });
   },
   onClick_1() {
     wx.navigateTo({ url: '/pages/set/set' });
@@ -135,6 +135,6 @@ Page({
     wx.navigateTo({ url: '/pages/wendu/wendu' });
   },
   onClick_3() {
-    wx.navigateTo({ url: '/pages/my/my' });
+    wx.navigateTo({ url: '/pages/PersonalCenter/PersonalCenter' });
   },
 });

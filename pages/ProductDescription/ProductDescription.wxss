@@ -1,3 +1,4 @@
+/* pages/ProductDescription/ProductDescription.wxss */
 .page {
   background-color: #ffffff;
   width: 100%;
