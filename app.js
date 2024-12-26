@@ -2,10 +2,11 @@ App({
   onLaunch() {},
   globalData: {
     // 设备名称
-    productName:"冷量科技降温服",
+    productName:"知豆家用智能豆腐机",
     // 用户名称
-    username: "abc",
+    username: "zoe",
     // 各部位的温度
+    //冷量计算需要，我们后续会删掉
     setTem : 26,
     realTem : 25,
     leftChestTem : 26,

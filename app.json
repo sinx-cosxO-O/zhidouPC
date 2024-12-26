@@ -23,7 +23,7 @@
         "custom-tab-bar/index"
     ],
     "tabBar": {
-        "selectedColor": "#31869B",
+        "selectedColor": "#c09564", 
         "list": [
           {
             "current": 0,
@@ -42,21 +42,22 @@
           {
             "current": 2,
             "pagePath": "pages/wendu/wendu",
-            "text": "记录",
+            "text": "制作记录",
             "iconPath": "./imgs/wendu.png",
             "selectedIconPath": "./imgs/wendu.png"
           },
           {
             "current": 3,
             "pagePath": "pages/my/my",
-            "text": "我的",
+            "text": "个人中心",
             "iconPath": "./imgs/my.png",
             "selectedIconPath": "./imgs/my.png"
           }
         ]
       },
     "window": {
-        "navigationStyle": "custom"
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "Demo"
     },
     "lazyCodeLoading": "requiredComponents",
     "usingComponents": {
@@ -73,6 +74,5 @@
         "van-progress": "@vant/weapp/progress/index",
         "van-checkbox": "@vant/weapp/checkbox/index",
         "van-checkbox-group": "@vant/weapp/checkbox-group/index"
-        
     }
 }

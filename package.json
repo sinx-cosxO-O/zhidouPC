@@ -3,7 +3,7 @@
     "@vant/weapp": "*",
     "miniprogram-sm-crypto": "^0.3.13"
   },
-  "name": "code-clothes-20240522220359",
+  "name": "code-zhidou-20241226",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {

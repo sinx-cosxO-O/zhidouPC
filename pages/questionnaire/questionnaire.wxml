@@ -11,35 +11,35 @@
         wx:for-index="index"
         wx:key="index"
       >
-        <text class="self-start font text_2">这是一个单选题问题的题目</text>
+        <text class="self-start font text_2">您对我们产品的使用评价怎么样</text>
         <view class="flex-col self-stretch group_3 mt-23">
           <view class="flex-row items-center">
             <image
               class="image_8"
               src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=72a5ee113b72ef79c6f1d94c050d5f61.png"
             />
-            <text class="font_2 ml-7">A.这是这个问题的其中一个选项</text>
+            <text class="font_2 ml-7">A.好！</text>
           </view>
           <view class="flex-row items-center mt-19">
             <image
               class="image_8"
               src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=ebb5c283929c74f5f85685f82c5a2acf.png"
             />
-            <text class="font_2 ml-8">B.这是这个问题的其中一个选项</text>
+            <text class="font_2 ml-8">B.很好！</text>
           </view>
           <view class="flex-row items-center mt-19">
             <image
               class="image_8"
               src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=ebb5c283929c74f5f85685f82c5a2acf.png"
             />
-            <text class="font_2 ml-8">C.这是这个问题的其中一个选项</text>
+            <text class="font_2 ml-8">C.非常好！</text>
           </view>
           <view class="flex-row items-center mt-19">
             <image
               class="image_8"
               src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=ebb5c283929c74f5f85685f82c5a2acf.png"
             />
-            <text class="font_2 ml-8">D.这是这个问题的其中一个选项</text>
+            <text class="font_2 ml-8">D.大大滴好！</text>
           </view>
         </view>
       </view>

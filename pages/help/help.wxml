@@ -34,35 +34,35 @@
     <view class="flex-col group_3">
       <text class="self-start text_3">常见问题</text>
       <view class="flex-row justify-between items-center self-stretch section_4 view">
-        <text class="font">制冷效果不好 怎么办？</text>
+        <text class="font">做不成豆腐 怎么办？</text>
         <image
           class="image_11"
           src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=317f668e2d5a264fc0b4771697d525f2.png"
         />
       </view>
       <view class="flex-row justify-between items-center self-stretch section_4">
-        <text class="font">制冷效果不好 怎么办？</text>
+        <text class="font">没有别的种类的豆腐 怎么办？</text>
         <image
           class="image_11"
           src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=317f668e2d5a264fc0b4771697d525f2.png"
         />
       </view>
       <view class="flex-row justify-between items-center self-stretch section_4">
-        <text class="font">制冷效果不好 怎么办？</text>
+        <text class="font">连不上机器 怎么办？</text>
         <image
           class="image_11"
           src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=317f668e2d5a264fc0b4771697d525f2.png"
         />
       </view>
       <view class="flex-row justify-between items-center self-stretch section_4">
-        <text class="font">制冷效果不好 怎么办？</text>
+        <text class="font">怎么办？</text>
         <image
           class="image_11"
           src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=317f668e2d5a264fc0b4771697d525f2.png"
         />
       </view>
       <view class="flex-row justify-between items-center self-stretch section_4">
-        <text class="font">制冷效果不好 怎么办？</text>
+        <text class="font">怎么办？</text>
         <image
           class="image_11"
           src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=317f668e2d5a264fc0b4771697d525f2.png"

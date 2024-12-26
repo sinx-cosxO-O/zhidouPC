@@ -5,16 +5,16 @@
     <view class="flex-col section_3">
       <view class="flex-row">
         <text class="font_2 text_2">公司名称：</text>
-        <text class="font text_3 ml-4">重庆明月湖智能发展有限公司</text>
+        <text class="font text_3 ml-4">知豆创新</text>
       </view>
       <view class="flex-col group_3">
         <view class="flex-row items-center">
           <text class="font_2 text_4">公司邮箱：</text>
-          <text class="font text_5 ml-3">junglejyj@gmail.com</text>
+          <text class="font text_5 ml-3">melissa.boat0405@gmail.com</text>
         </view>
         <view class="flex-row items-center mt-16">
           <text class="font_2 text_6">公司电话：</text>
-          <text class="font_3 text_7">13778899426</text>
+          <text class="font_3 text_7">13212338867</text>
           <image
             class="image_8"
             src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=2d8805fc042676dc1eb3e848ea107444.png"
@@ -26,7 +26,7 @@
         </view>
         <view class="flex-row items-baseline mt-16">
           <text class="font_2 text_9">公司网址：</text>
-          <text class="font_3 ml-4">www.cooltec.com</text>
+          <text class="font_3 ml-4">暂时没有qaq 正在努力ing</text>
         </view>
       </view>
       <view class="flex-col items-center group_4">

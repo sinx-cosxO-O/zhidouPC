@@ -3,7 +3,7 @@
     <view class="self-center section_3"></view>
     <view class="flex-col items-center self-stretch group_3">
       <text class="text">Hello,欢迎使用</text>
-      <text class="text_2 mt-11">制冷背心23454654</text>
+      <text class="text_2 mt-11">知豆豆腐机23454654</text>
     </view>
     <view class="flex-col justify-start items-center button text-wrapper"><text class="text_3">开始使用</text></view>
   </view>
