@@ -4,9 +4,9 @@
     </view>
     <view class="flex-col group_4 mt-22">
       <view class="flex-col justify-start items-end relative group_5">
-        <image style="width: 746rpx; height: 736rpx; display: block; box-sizing: border-box"
+        <image style="width: 668rpx; height: 500rpx; display: block; box-sizing: border-box; position: relative; left: -77rpx; top: -43rpx"
           class="image_9"
-          src="../../imgs/clothes2.png"
+          src="../../imgs/machine.png"
         />
 
         <view class="flex-row justify-between section_5 pos_9" style="position: absolute; left: 0rpx; top: 544rpx">
@@ -40,7 +40,7 @@
           <text class="text_4">调整完成</text>
         </view>
       </view>
-      <view class="flex-col relative section_6" style="position: relative; left: 0rpx; top: -70rpx">
+      <view class="flex-col relative section_6" style="position: relative; left: 0rpx; top: 8rpx">
         <view class="flex-row justify-between items-center">
           <view class="flex-row items-center">
             <text class="font_5">当前温度：</text>
@@ -76,7 +76,7 @@
           <text wx:else class="font_6 ml-8">60℉-68℉</text>
         </view>
       </view>
-      <view class="flex-col section_7" style="position: relative; left: 0rpx; top: -64rpx">
+      <view class="flex-col section_7" style="position: relative; left: 0rpx; top: 56rpx">
         <view class="flex-row justify-between items-center">
           <view class="flex-row items-center button_2">
             <text class="font_6 text_11">制冷</text>

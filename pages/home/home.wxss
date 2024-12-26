@@ -50,8 +50,8 @@
 }
 .image_9 {
   /* filter: blur(60.2rpx); */
-  width: 746rpx;
-  height: 728rpx;
+  width: 375*2rpx;
+  height: 234*2rpx;
 }
 .section_3 {
   padding: 8rpx 0 544rpx;

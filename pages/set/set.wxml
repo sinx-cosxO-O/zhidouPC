@@ -1,9 +1,9 @@
 <view class="flex-col page">
   <view class="flex-col flex-1 group_3" style="width: 746rpx; height: 1460rpx; display: flex; box-sizing: border-box">
     <view class="flex-col justify-start items-end relative group_2">
-      <image style="width: 628rpx; height: 610rpx; display: block; box-sizing: border-box"
+      <image style="width: 660rpx; height: 445rpx; display: block; box-sizing: border-box"
         class="image_7"
-        src="../../imgs/clothes1.png"
+        src="../../imgs/machine.png"
       />
       <view class="flex-row justify-between section_1 pos_2" style="width: 686rpx; height: 124rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 505rpx; position: absolute">
         <text class="font text">当前状态</text>

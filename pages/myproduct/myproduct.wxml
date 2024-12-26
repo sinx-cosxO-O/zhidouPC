@@ -1,4 +1,4 @@
-<view margin-top="150rpx" bindtap="returnJump" style="position: relative; left: 0rpx; top: 118rpx; width: 750rpx; height: 68rpx; display: block; box-sizing: border-box" bindtap="returnJump">
+<view margin-top="150rpx" bindtap="returnJump" style="position: relative; left: 0rpx; top: 93rpx; width: 750rpx; height: 68rpx; display: block; box-sizing: border-box" bindtap="returnJump">
         <text class="font_2 text_2"> {{'< '}} 返回</text>    
 </view>
 <view class="flex-col page">
@@ -10,12 +10,12 @@
         class="image_9"
         src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=dfd6bc7bd48eb3e44886475292d79d9b.png"
       />
-      <image
+      <image style="height: 558rpx; display: block; box-sizing: border-box; left: 345rpx; top: 0rpx; width: 756rpx; position: absolute"
         class="image_6 pos"
-        src="../../imgs/clothes2.png"
+        src="../../imgs/machine.png"
       />
     </view>
-    <view class="flex-col relative section_3">
+    <view class="flex-col relative section_3" style="position: relative; left: 0rpx; top: 102rpx">
       <view class="flex-col self-stretch group_4">
         <view class="flex-row items-center self-stretch">
           <text class="font_2 text_2">产品名称：</text>
