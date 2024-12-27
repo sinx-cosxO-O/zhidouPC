@@ -14,7 +14,7 @@
     <view class="flex-col group_3">
       <view class="flex-row section_3">
         <text class="font text_3">用户昵称</text>
-        <text class="font_2 ml-16">微信用户8867</text>
+        <text class="font_2 ml-16">momo</text>
       </view>
       <view class="flex-row justify-center items-center relative section_4">
         <text class="font text_4 pos">性别</text>

@@ -12,7 +12,7 @@ Page({
     return {};
   },
   returnJump:function(){
-      console.log("11111");
+      console.log("11111111fortest");
       wx.switchTab({
         url: '/pages/PersonalCenter/PersonalCenter',
       })
