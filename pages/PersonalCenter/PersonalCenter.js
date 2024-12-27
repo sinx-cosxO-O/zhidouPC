@@ -6,12 +6,12 @@ Page({
   },
   myProduct:function(){
       wx.navigateTo({
-        url: '/pages/myproduct/myproduct',
+        url: '/pages/MyProduct/MyProduct',
       })
   },
   personinfoJump:function(){
       wx.navigateTo({
-        url: '/pages/PersonInformation/PersonInformation',
+        url: '/pages/PersonalInformation/PersonalInformation',
       })
   },
   helpJump:function(){
