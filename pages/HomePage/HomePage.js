@@ -26,28 +26,48 @@ function stringToByte(str) {
 Page({
   data: {
     switchV: false,
-    switchV_1: false,
     setTem: app.globalData.setTem,
     realTem: app.globalData.realTem,
     option1: [
-        { text: '坐着做重型肢体运动', value: 0 },
-        { text: '站立做重型肢体运动', value: 1 },
-        { text: '做轻松肢体运动', value: 2 },
+        { text: '豆浆', value: 0 },
+        { text: '豆腐脑', value: 1 },
+        { text: '豆腐', value: 2 },
       ],
       value1: 0,
   },
   onShareAppMessage() {
     return {};
   },
+
   //开关-进入蓝牙连接界面
   onSwitchChange(event) {
+    //让开关状态不自动变化
     this.setData({
-      switchV: event.detail,
+      switchV: event.detail
     });
-    wx.navigateTo({
-      url: '/pages/BlueTooth/BlueTooth',
-    })
+    //获取开关的当前状态
+    const isChecked = event.detail
+    //判断开关状态
+    if(isChecked){
+      this.switchOn();
+    }
+    else{
+      this.swithOff();
+    }
   },
+  //开关开
+  switchOn(){
+    console.log("BLT connecting...");
+    wx.navigateTo({
+      url: '/pages/BlueTooth/BlueTooth',
+      });
+
+  },
+  switchOff(){
+    console.log("BLT disconnected")
+    ////////////////////这里补一个断掉蓝牙====================================================================
+  },
+
   BlechangeTem(){
     const number = this.data.setTem; 
     const buffer = new ArrayBuffer(4); 

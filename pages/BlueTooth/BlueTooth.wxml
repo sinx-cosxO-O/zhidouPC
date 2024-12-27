@@ -27,14 +27,14 @@ module.exports.len = function(arr) {
             class="shrink-0 image_8"
             src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=7d4d200360b1371a53b7ef3dc363c772.png"
           />
-          <text class="ml-10 text_2">DADK48662</text>
+          <text class="ml-10 text_2" style="position: relative; left: -39rpx; top: -5rpx">bluetooth</text>
         </view>
         <text class="font text_3">连接</text>
       </view>
     </view>
     <view class="group_3">
       <text class="font_2">打开蓝牙找到</text>
-      <text class="font_3">DADK48662</text>
+      <text class="font_3">bluetooth</text>
       <text class="font_2">，点击连接，连接完成后，返回小程序即控制</text>
       <text class="font_3">知豆豆腐机</text>
     </view>

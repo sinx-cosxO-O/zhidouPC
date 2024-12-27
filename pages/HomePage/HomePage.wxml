@@ -10,8 +10,8 @@
         />
 
         <view class="flex-row justify-between section_5 pos_9" style="position: absolute; left: 0rpx; top: 544rpx">
-        <!-- 切换运动状态 -->
-          <text class="font_5">当前状态</text>
+        <!-- 切换制作方式-->
+          <text class="font_5">制作产品</text>
           <view class="flex-row items-center">
             <van-dropdown-menu plain="true" class="font_5" active-color="#1989fa">
              <van-dropdown-item  class="font_5" value="{{ value1 }}" options="{{ option1 }}" />
@@ -21,7 +21,7 @@
         <text class="font_3 pos_8" style="position: absolute; left: 18rpx; top: 229rpx">连接设备</text>
         <van-switch
           class="pos_7 switchV"
-          name="clothesSwitch"
+          name="BLTswitch"
           size="28.00"
           bind:change="onSwitchChange"
           checked="{{ switchV }}"
@@ -40,20 +40,14 @@
           <text class="text_4">调整完成</text>
         </view>
       </view>
-      <view class="flex-col relative section_6" style="position: relative; left: 0rpx; top: 8rpx">
+      <view class="flex-col relative section_6" style="position: relative; left: 0rpx; top: 181rpx">
         <view class="flex-row justify-between items-center">
           <view class="flex-row items-center">
             <text class="font_5">当前温度：</text>
             <text wx:if="{{switchV_1==0}}" class="font_6 ml-4">{{realTem}}℃</text>
             <text wx:else class="font_6 ml-4">{{32+realTem*1.8}}℉</text>
           </view>
-          <van-switch
-            name="cfSwitch"
-            size="28.00"
-            class="switchV_1"
-            bind:change="onSwitchChange_1"
-            checked="{{ switchV_1 }}"
-          ></van-switch>
+          
         </view>
         <view class="flex-col group_6">
           <view class="flex-row items-baseline group_7">
@@ -72,14 +66,13 @@
             </view>
             <text class="font_5 text_9">建议温度区间：</text>
           </view>
-          <text wx:if="{{switchV_1==0}}" class="font_6 ml-8">15℃-20℃</text>
-          <text wx:else class="font_6 ml-8">60℉-68℉</text>
+          <text class="font_6 ml-8">15℃-20℃</text>
         </view>
       </view>
-      <view class="flex-col section_7" style="position: relative; left: 0rpx; top: 56rpx">
+      <view class="flex-col section_7" style="position: relative; left: 0rpx; top: 202rpx">
         <view class="flex-row justify-between items-center">
           <view class="flex-row items-center button_2">
-            <text class="font_6 text_11">制冷</text>
+            <text class="font_6 text_11">压力大小</text>
             <image
               class="shrink-0 image_12 ml-4"
               src="../../imgs/Vector.png"
@@ -109,5 +102,38 @@
         </view>
       </view>
     </view>
+<view class="flex-col section_7" style="position: relative; left: -4rpx; top: 63rpx">
+        <view class="flex-row justify-between items-center">
+          <view class="flex-row items-center button_2">
+            <text class="font_6 text_11">压制时间</text>
+            <image
+              class="shrink-0 image_12 ml-4"
+              src="../../imgs/Vector.png"
+            />
+          </view>
+          <view class="flex-row items-center">
+            <text class="font_5">当前整体温度：</text>
+            <text class="font_6 ml-2">{{realTem}}℃</text>
+          </view>
+        </view>
+        <view class="flex-col mt-28">
+        <!-- 滑块上面显示温度的部分 -->
+          <!-- <text  class="self-start text_12">{{setTem}}</text> -->
+          <view class="view1 flex-row items-center self-stretch mt-12">
+          <!-- 降低温度 -->
+            <van-button size="normal" round plain bind:click="onJianTem">-</van-button>
+
+            <!-- 滑动条部分 -->
+            <van-slider step="1" bar-height="12px" max="35" min="15" class="flex-col justify-start flex-1 relative group_10 ml-4" value="{{ setTem }}" use-button-slot="1" bind:drag="onDrag">
+                <!-- <view class="custom-button" slot="button">{{ setTem }}</view> -->
+                <view slot="button" class="huakuai" style="width: 76rpx; height: 50rpx; display: block; box-sizing: border-box">{{ setTem }}</view>
+            </van-slider>
+
+            <!-- 增加温度 -->
+            <van-button  style="right : 0"  class="image_1 image_13 ml-4" round plain bind:click="onAddTem">+</van-button>
+          </view>
+        </view>
+      </view>
+
   </view>
 </view>
