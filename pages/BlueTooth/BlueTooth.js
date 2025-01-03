@@ -23,9 +23,9 @@ function ab2hex(buffer) {
 Page({
   //数据定义
   data: {
-    devices: [],           //搜索到的设备
-    connected: false,      //是否连接
-    chs: [],               //蓝牙特征信息
+    devices: [], //搜索到的设备
+    connected: false, //是否连接
+    chs: [], //蓝牙特征信息
   },
   //打开蓝牙适配器
   /*
@@ -37,10 +37,10 @@ Page({
     wx.openBluetoothAdapter({
       success: (res) => {
         console.log('openBluetoothAdapter success', res)
-        this.startBluetoothDevicesDiscovery()     // 成功打开后开始搜索蓝牙设备
+        this.startBluetoothDevicesDiscovery() // 成功打开后开始搜索蓝牙设备
       },
       fail: (res) => {
-        if (res.errCode === 10001) {   // 错误码 10001 表示蓝牙未开启
+        if (res.errCode === 10001) { // 错误码 10001 表示蓝牙未开启
           wx.onBluetoothAdapterStateChange(function (res) {
             console.log('onBluetoothAdapterStateChange', res)
             if (res.available) {
@@ -51,23 +51,25 @@ Page({
       }
     })
   },
+
   // 获取蓝牙适配器状态
   //检查当前蓝牙状态是否可用并根据状态采取行动
   getBluetoothAdapterState() {
     wx.getBluetoothAdapterState({
       success: (res) => {
-        console.log('getBluetoothAdapterState', res)   //发现设备后处理
+        console.log('getBluetoothAdapterState', res) //发现设备后处理
         if (res.discovering) {
           this.onBluetoothDeviceFound()
         } else if (res.available) {
-          this.startBluetoothDevicesDiscovery()       //开始搜索设备
+          this.startBluetoothDevicesDiscovery() //开始搜索设备
         }
       }
     })
   },
+
   //开始和停止蓝牙设备搜索
   startBluetoothDevicesDiscovery() {
-    if (this._discoveryStarted) {   //防止重复启动
+    if (this._discoveryStarted) { //防止重复启动
       return
     }
     this._discoveryStarted = true
@@ -82,6 +84,7 @@ Page({
   stopBluetoothDevicesDiscovery() {
     wx.stopBluetoothDevicesDiscovery()
   },
+
   // 搜索到设备时的处理逻辑
   onBluetoothDeviceFound() {
     wx.onBluetoothDeviceFound((res) => {
@@ -101,7 +104,8 @@ Page({
       })
     })
   },
-  //连接函数
+
+  //蓝牙连接设备
   createBLEConnection(e) {
     const ds = e.currentTarget.dataset
     const deviceId = ds.deviceId
@@ -120,13 +124,15 @@ Page({
         console.log("lianjie Deviceid" + deviceId);
         this.getBLEDeviceServices(deviceId);
         wx.navigateTo({
-          url: '../control/control?connectedDeviceId=' + deviceId + '&name=' + name, // 将URL替换为你的 control 页面路径
+          //url: '../control/control?connectedDeviceId=' + deviceId + '&name=' + name, // 将URL替换为你的 control 页面路径
+          url: '/pages/HomePage/HomePage'
         });
       }
     })
     this.stopBluetoothDevicesDiscovery()
-
   },
+
+  //==================================================这个好像没有使用上，断掉蓝牙连接的==========================================
   closeBLEConnection() {
     wx.closeBLEConnection({
       deviceId: this.data.deviceId
@@ -137,22 +143,26 @@ Page({
       canWrite: false,
     })
   },
+
+  //获取蓝牙设备服务和特征值
   getBLEDeviceServices(deviceId) {
     wx.getBLEDeviceServices({
       deviceId,
       success: (res) => {
         for (let i = 0; i < res.services.length; i++) {
           if (res.services[i].isPrimary) {
-            this.getBLEDeviceCharacteristics(deviceId, res.services[i].uuid)
+            this.getBLEDeviceCharacteristics(deviceId, res.services[i].uuid) // 获取特征值
             return
           }
         }
       }
     })
   },
+
   getBLEDeviceCharacteristics(deviceId, serviceId) {
     console.log("deviceId:", deviceId)
     console.log("serviceId:", serviceId)
+    //定义一些全局变量
     app.globalData.readDeviceId = deviceId;
     app.globalData.writeDeviceId = deviceId;
     app.globalData.readServiceId = serviceId;
@@ -216,11 +226,13 @@ Page({
       this.setData(data)
     })
   },
+
+  //写入数据
   writeBLECharacteristicValue() {
     // 向蓝牙设备发送一个0x00的16进制数据
     let buffer = new ArrayBuffer(1)
     let dataView = new DataView(buffer)
-    dataView.setUint8(0, Math.random() * 255 | 0)
+    dataView.setUint8(0, Math.random() * 255 | 0) //生成随机数据
     wx.writeBLECharacteristicValue({
       deviceId: this._deviceId,
       serviceId: this._deviceId,
@@ -228,10 +240,14 @@ Page({
       value: buffer,
     })
   },
+
+  //关闭蓝牙连接和适配器
   closeBluetoothAdapter() {
     wx.closeBluetoothAdapter()
     this._discoveryStarted = false
   },
+
+  //回到主页
   returnJump: function () {
     console.log("11111");
     wx.switchTab({
