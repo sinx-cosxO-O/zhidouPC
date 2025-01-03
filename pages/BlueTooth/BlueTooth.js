@@ -1,4 +1,5 @@
 const app = getApp()
+
 function inArray(arr, key, val) {
   for (let i = 0; i < arr.length; i++) {
     if (arr[i][key] === val) {
@@ -20,20 +21,26 @@ function ab2hex(buffer) {
 }
 
 Page({
+  //数据定义
   data: {
-    devices: [],
-    connected: false,
-    chs: [],
+    devices: [],           //搜索到的设备
+    connected: false,      //是否连接
+    chs: [],               //蓝牙特征信息
   },
+  //打开蓝牙适配器
+  /*
+   * 初始化蓝牙模块
+   * 处理蓝牙未开启时的监听逻辑
+   */
   openBluetoothAdapter() {
-      console.log("connect");
+    console.log("connect");
     wx.openBluetoothAdapter({
       success: (res) => {
         console.log('openBluetoothAdapter success', res)
-        this.startBluetoothDevicesDiscovery()
+        this.startBluetoothDevicesDiscovery()     // 成功打开后开始搜索蓝牙设备
       },
       fail: (res) => {
-        if (res.errCode === 10001) {
+        if (res.errCode === 10001) {   // 错误码 10001 表示蓝牙未开启
           wx.onBluetoothAdapterStateChange(function (res) {
             console.log('onBluetoothAdapterStateChange', res)
             if (res.available) {
@@ -44,20 +51,23 @@ Page({
       }
     })
   },
+  // 获取蓝牙适配器状态
+  //检查当前蓝牙状态是否可用并根据状态采取行动
   getBluetoothAdapterState() {
     wx.getBluetoothAdapterState({
       success: (res) => {
-        console.log('getBluetoothAdapterState', res)
+        console.log('getBluetoothAdapterState', res)   //发现设备后处理
         if (res.discovering) {
           this.onBluetoothDeviceFound()
         } else if (res.available) {
-          this.startBluetoothDevicesDiscovery()
+          this.startBluetoothDevicesDiscovery()       //开始搜索设备
         }
       }
     })
   },
+  //开始和停止蓝牙设备搜索
   startBluetoothDevicesDiscovery() {
-    if (this._discoveryStarted) {
+    if (this._discoveryStarted) {   //防止重复启动
       return
     }
     this._discoveryStarted = true
@@ -72,6 +82,7 @@ Page({
   stopBluetoothDevicesDiscovery() {
     wx.stopBluetoothDevicesDiscovery()
   },
+  // 搜索到设备时的处理逻辑
   onBluetoothDeviceFound() {
     wx.onBluetoothDeviceFound((res) => {
       res.devices.forEach(device => {
@@ -90,11 +101,12 @@ Page({
       })
     })
   },
+  //连接函数
   createBLEConnection(e) {
     const ds = e.currentTarget.dataset
     const deviceId = ds.deviceId
     const name = ds.name
-    console.log(deviceId,name)
+    console.log(deviceId, name)
     wx.createBLEConnection({
       deviceId,
       success: (res) => {
@@ -103,17 +115,17 @@ Page({
           name,
           deviceId,
         })
-        app.globalData.readDeviceId=ds.deviceId;
-        app.globalData.writeDeviceId=ds.deviceId;
-        console.log("lianjie Deviceid"+deviceId);
+        app.globalData.readDeviceId = ds.deviceId;
+        app.globalData.writeDeviceId = ds.deviceId;
+        console.log("lianjie Deviceid" + deviceId);
         this.getBLEDeviceServices(deviceId);
         wx.navigateTo({
-          url: '../control/control?connectedDeviceId=' + deviceId +'&name='+name, // 将URL替换为你的 control 页面路径
+          url: '../control/control?connectedDeviceId=' + deviceId + '&name=' + name, // 将URL替换为你的 control 页面路径
         });
       }
     })
     this.stopBluetoothDevicesDiscovery()
-    
+
   },
   closeBLEConnection() {
     wx.closeBLEConnection({
@@ -139,12 +151,12 @@ Page({
     })
   },
   getBLEDeviceCharacteristics(deviceId, serviceId) {
-    console.log("deviceId:",deviceId)
-    console.log("serviceId:",serviceId)
-    app.globalData.readDeviceId=deviceId;
-    app.globalData.writeDeviceId=deviceId;
-    app.globalData.readServiceId=serviceId;
-    app.globalData.writeServiceId=serviceId;
+    console.log("deviceId:", deviceId)
+    console.log("serviceId:", serviceId)
+    app.globalData.readDeviceId = deviceId;
+    app.globalData.writeDeviceId = deviceId;
+    app.globalData.readServiceId = serviceId;
+    app.globalData.writeServiceId = serviceId;
     wx.getBLEDeviceCharacteristics({
       deviceId,
       serviceId,
@@ -152,20 +164,20 @@ Page({
         console.log('getBLEDeviceCharacteristics success', res.characteristics)
         for (let i = 0; i < res.characteristics.length; i++) {
           let item = res.characteristics[i]
-        //   console.log("hahahalength"+res.characteristics.length);
+          //   console.log("hahahalength"+res.characteristics.length);
           if (item.properties.read) {
-              app.globalData.readCharacteristicId=item.uuid;
+            app.globalData.readCharacteristicId = item.uuid;
           }
           if (item.properties.write) {
             this.setData({
               canWrite: true
             })
-            app.globalData.writeCharacteristicId=item.uuid;
+            app.globalData.writeCharacteristicId = item.uuid;
             this._deviceId = deviceId
             this._serviceId = serviceId
             this._characteristicId = item.uuid
             this.writeBLECharacteristicValue()
-            console.log("write"+this._deviceId);
+            console.log("write" + this._deviceId);
           }
           if (item.properties.notify || item.properties.indicate) {
             wx.notifyBLECharacteristicValueChange({
@@ -176,7 +188,7 @@ Page({
             })
           }
         }
-        console.log("app"+JSON.stringify(app.globalData));
+        console.log("app" + JSON.stringify(app.globalData));
       },
       fail(res) {
         console.error('getBLEDeviceCharacteristics', res)
@@ -220,7 +232,7 @@ Page({
     wx.closeBluetoothAdapter()
     this._discoveryStarted = false
   },
-  returnJump:function(){
+  returnJump: function () {
     console.log("11111");
     wx.switchTab({
       url: '/pages/HomePage/HomePage',

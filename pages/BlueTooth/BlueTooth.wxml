@@ -1,32 +1,26 @@
 <view margin-top="150rpx" bindtap="returnJump" style="position: relative; left: 0rpx; top: 93rpx; width: 750rpx; height: 68rpx; display: block; box-sizing: border-box" bindtap="returnJump">
-        <text class="font_4 text_4"> {{'< '}} 返回</text>    
+  <text class="font_4 text_4"> {{'< '}} 返回</text>
 </view>
 
 <wxs module="utils">
-module.exports.max = function(n1, n2) {
-  return Math.max(n1, n2)
-}
-module.exports.len = function(arr) {
-  arr = arr || []
-  return arr.length
-}
+  module.exports.max = function (n1, n2) {
+    return Math.max(n1, n2)
+  }
+  module.exports.len = function (arr) {
+    arr = arr || []
+    return arr.length
+  }
 </wxs>
 <view class="flex-col page">
   <view class="flex-col flex-1 group_2">
     <view class="flex-col section_3">
       <view class="flex-row justify-between items-center section_4">
         <text class="font text">蓝牙</text>
-        <image
-          class="switch"
-          src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=8b640a5dff009bba539468dfaa7bbe42.png"
-        />
+        <image class="switch" src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=8b640a5dff009bba539468dfaa7bbe42.png" />
       </view>
       <view class="mt-8 flex-row justify-between items-center section_5">
         <view class="flex-row items-center">
-          <image
-            class="shrink-0 image_8"
-            src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=7d4d200360b1371a53b7ef3dc363c772.png"
-          />
+          <image class="shrink-0 image_8" src="https://ide.code.fun/api/image?token=664dbaa4a16e9e00124f5f4a&name=7d4d200360b1371a53b7ef3dc363c772.png" />
           <text class="ml-10 text_2" style="position: relative; left: -39rpx; top: -5rpx">bluetooth</text>
         </view>
         <text class="font text_3">连接</text>
@@ -43,12 +37,7 @@ module.exports.len = function(arr) {
 </view>
 <view class="devices_summary">已发现 {{devices.length}} 个外围设备：</view>
 <scroll-view class="device_list" scroll-y scroll-with-animation>
-  <view wx:for="{{devices}}" wx:key="index"
-   data-device-id="{{item.deviceId}}"
-   data-name="{{item.name || item.localName}}"
-   bindtap="createBLEConnection" 
-   class="device_item"
-   hover-class="device_item_hover">
+  <view wx:for="{{devices}}" wx:key="index" data-device-id="{{item.deviceId}}" data-name="{{item.name || item.localName}}" bindtap="createBLEConnection" class="device_item" hover-class="device_item_hover">
     <view style="font-size: 16px; color: #333;">{{item.name}}</view>
     <view style="font-size: 10px">信号强度: {{item.RSSI}}dBm ({{utils.max(0, item.RSSI + 100)}}%)</view>
     <view style="font-size: 10px">UUID: {{item.deviceId}}</view>
@@ -60,8 +49,8 @@ module.exports.len = function(arr) {
   <view>
     <text>已连接到 {{name}}</text>
     <view class="operation">
-    <button wx:if="{{canWrite}}" size="mini" bindtap="writeBLECharacteristicValue">写数据</button>
-    <button size="mini" bindtap="closeBLEConnection">断开连接</button>
+      <button wx:if="{{canWrite}}" size="mini" bindtap="writeBLECharacteristicValue">写数据</button>
+      <button size="mini" bindtap="closeBLEConnection">断开连接</button>
     </view>
   </view>
   <view wx:for="{{chs}}" wx:key="index" style="font-size: 12px; margin-top: 10px;">

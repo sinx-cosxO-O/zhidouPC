@@ -38,8 +38,8 @@
             <text class="font_6 ml-4">80%</text>
           </view>
           <view class="flex-row justify-end relative view">
-            <text class="font">℃</text>
-            <text class="font_3 ml-22">℉</text>
+
+
           </view>
         </view>
         <view class="flex-row items-center group_8">

@@ -45,6 +45,10 @@ Page({
         text: '豆腐',
         value: 2
       },
+      {
+        text:'果蔬',
+        value:3,
+      },
     ],
     value1: 0,
   },
@@ -108,12 +112,6 @@ Page({
     })
     console.log("send____" + app.globalData.writeCharacteristicId);
   },
-  // onSwitchChange_1(event) {
-  //     console.log("222");
-  //   this.setData({
-  //     switchV_1: event.detail,
-  //   });
-  // },
 
 
   //===========================================压力大小===========================================
@@ -194,6 +192,7 @@ Page({
 
 
   finish() {
+    //======================================================这里需要通信了=============================================
     wx.showToast({
       title: '开始制作！', //提示文字 弹出界面
       duration: 1000, //显示时长
@@ -204,8 +203,6 @@ Page({
       complete: function () {} //接口调用结束的回调函数  
     })
   },
-
-
 
 
   onClick() {
