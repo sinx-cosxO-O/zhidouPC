@@ -219,10 +219,6 @@ Page({
           value: ab2hex(characteristic.value)
         }
       }
-      // data[`chs[${this.data.chs.length}]`] = {
-      //   uuid: characteristic.characteristicId,
-      //   value: ab2hex(characteristic.value)
-      // }
       this.setData(data)
     })
   },

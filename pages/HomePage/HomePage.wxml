@@ -11,7 +11,7 @@
           <text class="font_5">制作产品</text>
           <view class="flex-row items-center">
             <van-dropdown-menu plain="true" class="font_5" active-color="#1989fa">
-              <van-dropdown-item class="font_5" value="{{ value1 }}" options="{{ option1 }}" />
+              <van-dropdown-item class="font_5" value="{{ type_flag }}" options="{{ option1 }}" bind:change="onchange" />
             </van-dropdown-menu>
           </view>
         </view>

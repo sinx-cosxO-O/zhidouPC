@@ -33,24 +33,13 @@ Page({
     setTem: app.globalData.setTem, //全局变量
     realTem: app.globalData.realTem, //全局变量
     Press: app.globalData.Press, //压力大小
-    option1: [{
-        text: '豆浆',
-        value: 0
-      },
-      {
-        text: '豆腐脑',
-        value: 1
-      },
-      {
-        text: '豆腐',
-        value: 2
-      },
-      {
-        text: '果蔬',
-        value: 3,
-      },
+    option1: [
+      {text: '豆浆',    value: 0},
+      {text: '豆腐脑',  value: 1},
+      {text: '豆腐',    value: 2},
+      {text: '果蔬',    value: 3},
     ],
-    value1: 0,
+    type_flag: 0,
   },
 
   //小程序页面右上角的分享按钮，默认内容
@@ -83,8 +72,8 @@ Page({
 
   },
   switchOff() {
-    console.log("BLE disconnected")
-    ////////////////////这里补一个断掉蓝牙====================================================================
+    //wx.closeBluetoothAdapter();
+    console.log("BLE disconnected");
   },
 
 
@@ -94,9 +83,9 @@ Page({
     console.log('Sending data to BLE device:', data);
 
     // 将数据转换为 ArrayBuffer
-    const buffer = new ArrayBuffer(4);
+    const buffer = new ArrayBuffer(2);
     const view = new DataView(buffer);
-    view.setUint32(0, data, false); // 写入 4 字节的整数数据
+    view.setUint16(0, data, false); // 写入 4 字节的整数数据
 
     // 输出调试信息
     console.log('Sending value:', data);
@@ -123,21 +112,21 @@ Page({
   //"开始制作"
   finish() {
     //======================================================这里需要通信了=============================================
-    const value1 = this.data.value1;
+    value1 = this.data.type_flag;
     let dataToSend;
     // 根据 value1 的值决定要发送的数据
     switch (value1) {
       case 0: // 豆浆
-        dataToSend = 1111;
+        dataToSend = 1;
         break;
       case 1: // 豆腐脑
-        dataToSend = 2222;
+        dataToSend = 2;
         break;
       case 2: // 豆腐
-        dataToSend = 3333;
+        dataToSend = 3;
         break;
       case 3: // 果蔬
-        dataToSend = 4444;
+        dataToSend = 4;
         break;
       default:
         console.error('Invalid value1:', value1);
@@ -152,7 +141,7 @@ Page({
     this.sendDataToBLE(dataToSend);
     //显示提示信息
     wx.showToast({
-      title: '开始制作111！', //提示文字 弹出界面
+      title: '开始制作！', //提示文字 弹出界面
       duration: 1000, //显示时长
       mask: true, //是否显示透明蒙层，防止触摸穿透，默认：false  
       icon: 'success', //图标，支持"success"、"loading"  
