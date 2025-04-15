@@ -35,21 +35,21 @@
       {
         "current": 1,
         "pagePath": "pages/Customization/Customization",
-        "text": "自定义",
+        "text": "设备控制页",
         "iconPath": "./imgs/set.png",
         "selectedIconPath": "./imgs/set.png"
       },
       {
         "current": 2,
         "pagePath": "pages/Record/Record",
-        "text": "制作记录",
+        "text": "菜谱库",
         "iconPath": "./imgs/wendu.png",
         "selectedIconPath": "./imgs/wendu.png"
       },
       {
         "current": 3,
         "pagePath": "pages/PersonalCenter/PersonalCenter",
-        "text": "个人中心",
+        "text": "用户中心",
         "iconPath": "./imgs/my.png",
         "selectedIconPath": "./imgs/my.png"
       }
